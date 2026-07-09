@@ -304,6 +304,13 @@ export function runSolver(input: SolverInput): SolverOutput {
       variables[vn][floorKey] = 1
       constraints[floorKey] = { min: minGrams }
     }
+    // Modo livre: every selected ingredient gets a 0.5g minimum floor
+    // so all selected ingredients appear in the result, not just the cheapest.
+    if (mode === 'livre') {
+      const floorKey = `floor_livre_${vn}`
+      variables[vn][floorKey] = 1
+      constraints[floorKey] = { min: 0.5 }
+    }
   }
 
   // ── Energy density (v6 §5) — linearised on allocated mass ─────────────────

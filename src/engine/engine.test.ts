@@ -738,7 +738,7 @@ describe('Integration — formulate() pipeline', () => {
     }
   })
 
-  it('modo livre com 26 ingredientes → optimal com alocações (sem filtro 0.5g)', () => {
+  it('modo livre com 26 ingredientes → todos os 26 aparecem nas alocações', () => {
     const stage = STAGES.find(s => s.stage_id === 'adult_maintenance')!
     const targets = resolveTargets(stage, 950)
     const { formulation } = runSolver({
@@ -748,10 +748,12 @@ describe('Integration — formulate() pipeline', () => {
       mode: 'livre',
     })
     expect(formulation.solver_status).toBe('optimal')
-    expect(formulation.allocations.length).toBeGreaterThan(0)
-    // Alocações zero-grama não aparecem (grams <= 0 são filtradas)
-    const allZero = formulation.allocations.every(a => a.grams_per_day > 0)
-    expect(allZero).toBe(true)
+    expect(formulation.allocations.length).toBe(INGREDIENTS.length)
+    const allIds = new Set(INGREDIENTS.map(i => i.id))
+    const allocIds = new Set(formulation.allocations.map(a => a.ingredient_id))
+    for (const id of allIds) {
+      expect(allocIds.has(id)).toBe(true)
+    }
   })
 
   describe('modo livre combinatório', () => {
@@ -766,6 +768,8 @@ describe('Integration — formulate() pipeline', () => {
         mode: 'livre',
       })
       expect(formulation.solver_status).toBe('optimal')
+      expect(formulation.allocations.length).toBe(1)
+      expect(formulation.allocations[0].ingredient_id).toBe(ing.id)
     })
   })
 
@@ -789,6 +793,9 @@ describe('Integration — formulate() pipeline', () => {
         mode: 'livre',
       })
       expect(formulation.solver_status).toBe('optimal')
+      const allocIds = new Set(formulation.allocations.map(a => a.ingredient_id))
+      expect(allocIds.has(ingA.id)).toBe(true)
+      expect(allocIds.has(ingB.id)).toBe(true)
     })
   })
 })

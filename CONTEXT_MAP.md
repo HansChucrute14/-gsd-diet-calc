@@ -22,6 +22,7 @@
 | 2026-07-09 | v6.8.0 — Formulation modes | Modo Livre (todos slack) + Modo Ótimo (hard constraints c/ safety ceilings); sugestões em infeasible; filtro 0.5g removido. 41 testes engine (11 suites). |
 | 2026-07-09 | Movido para raiz | `gsd-diet-calc/` → raiz do repo para deploy Netlify. Paths de scripts corrigidos. |
 | 2026-07-09 | v6.8.1 — Total grams slack + testes combinatoriais | Slack total grams corrige infeasible em ingredientes com cap baixo. 351 testes combinatoriais (26 singles + 325 pares) em modo livre. 420 testes totais. |
+| 2026-07-09 | v6.8.2 — Diversidade modo livre | Piso 0.5g por ingrediente selecionado garante que todos apareçam no resultado. Testes atualizados para verificar presença de todos ingredientes selecionados. |
 
 ## Arquitetura
 
@@ -88,3 +89,4 @@
 | M5 | Filtro 0.5g → grams <= 0 | solver.ts |
 | M6 | Mode badge + sugestões no ResultsPanel | ResultsPanel.tsx |
 | M7 | 4 testes modo-specific (1 ingrediente livre, 1 otimo infeasible, 26 otimo, 26 livre) | engine.test.ts |
+| M8 | Piso 0.5g por ingrediente em modo livre (diversidade) | solver.ts |

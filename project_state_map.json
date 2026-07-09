@@ -864,8 +864,13 @@
         "date": "2026-07-09",
         "event": "v6.8.1 — Total grams slack + combinatorial tests",
         "details": "Slack de total grams adicionado em modo livre — ingredientes com max_inclusion_pct < ~13% (30-150g cap) causavam infeasible. +351 testes combinatoriais (26 singles + 325 pares) em modo livre. 420 testes, 0 falhas. scripts/reconcileIngredientSources.ts caminho corrigido. Deploy Netlify configurado."
+      },
+      {
+        "date": "2026-07-09",
+        "event": "v6.8.2 — Diversidade modo livre (piso 0.5g)",
+        "details": "Piso de 0.5g por ingrediente selecionado em modo livre garante que todos apareçam nas alocações, não apenas os mais baratos. Testes atualizados para verificar presença de todos ingredientes selecionados. 420 testes, 0 falhas."
       }
-    ],
+     ],
     "locked_decisions": [
       "Zod.parse substituído por validateIngredients() estrutural (ZodSchemaV5 rejeitava 26/26 ingredientes reais)",
       "CoverageBanner desacoplado do NUTRIENT_REGISTRY via props",
@@ -882,7 +887,7 @@
     "git_log": "3 commits no repositório GitHub HansChucrute14/-gsd-diet-calc. Deploy Netlify configurado."
   },
   "current_state": {
-    "verdict": "Engine com goal programming funcional, slacks para constraints hard (DER, density, Ca:P, total grams). Dois modos de formatação: Livre (todos slack) e Ótimo (hard constraints c/ safety ceilings). suggestMissingIngredients() em infeasible. Total grams slack corrigido — ingredientes com max_inclusion_pct baixo não causam mais infeasible. 420 testes passando (10 suites), typecheck limpo, build OK, 26 ingredientes reconciliados. Bloqueador principal: sem estágios de gestação/lactação nos dados. Progresso geral ~88%.",
+    "verdict": "Engine com goal programming funcional, slacks para constraints hard (DER, density, Ca:P, total grams). Dois modos: Livre (todos slack + piso 0.5g diversidade) e Ótimo (hard constraints + safety ceilings). suggestMissingIngredients() em infeasible. Total grams slack corrigido. Piso 0.5g garante todos ingredientes aparecem no livre. 420 testes (10 suites), typecheck limpo, build OK, 26 ingredientes. Bloqueador: sem estágios gestação/lactação. Progresso ~88%.",
     "progress_pct": 88,
     "blocking_issues": [
       {
@@ -986,8 +991,8 @@
   },
   "direct_answer": {
     "question": "qual e o estado do projeto?",
-    "answer": "gsd-diet-calc com engine goal programming + slack para constraints hard (DER, density, Ca:P). 65 testes passando (10 suites), UI tests jsdom, Web Worker, CoverageGate full-catalog, 26 ingredientes reconciliados. Bloqueado por gestação/lactação (dados). Progresso ~83%.",
-    "one_liner": "65 testes verdes, slacks eliminam infeasible com 1 ingrediente. Falta gestação/lactação (dados) e health-conditions.",
+    "answer": "gsd-diet-calc com engine goal programming + slack para constraints hard (DER, density, Ca:P, total grams). Dois modos: Livre (todos slack + piso 0.5g diversidade) e Ótimo (hard constraints + safety ceilings). 420 testes passando (10 suites), typecheck limpo, build OK, 26 ingredientes reconciliados. Bloqueado por gestação/lactação (dados). Progresso ~88%.",
+    "one_liner": "420 testes verdes, piso 0.5g garante diversidade modo livre. Falta gestação/lactação (dados) e health-conditions.",
     "critical_path": "Gestação/lactação (dados) → health-conditions → deploy"
   }
 }
