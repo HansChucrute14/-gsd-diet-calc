@@ -584,13 +584,13 @@
     }
   },
   "test_state": {
-    "summary": "69 tests, 10 suites, 0 failures",
+    "summary": "420 tests, 10 suites, 0 failures (26 singles + 325 pairs combinatoriais)",
     "typecheck": "tsc --noEmit: clean (0 errors)",
     "suites": [
       {
         "file": "src/engine/engine.test.ts",
-        "tests": 41,
-        "passed": 41,
+        "tests": 392,
+        "passed": 392,
         "failed": 0,
         "suites": [
            "Biometry (6)",
@@ -610,7 +610,8 @@
            "Modo livre 1 ingrediente (1)",
            "Modo otimo 1 ingrediente infeasible + sugestoes (1)",
            "Modo otimo 26 ingredientes (1)",
-           "Modo livre 26 ingredientes (1)"
+           "Modo livre 26 ingredientes (1)",
+           "Modo livre combinatorio — 26 singles + 325 pares (351)"
         ]
       },
       {
@@ -858,6 +859,11 @@
         "date": "2026-07-09",
         "event": "v6.8.0 — Formulation modes (Livre/Ótimo)",
         "details": "Modo Livre: todos nutrientes + DER + density + Ca:P têm slack → solver sempre optimal, deficiências via warnings. Modo Ótimo: só desirable tem slack; critical/important + safety ceilings são hard → pode retornar infeasible. suggestMissingIngredients() em infeasible. Filtro 0.5g removido. 41 testes engine (11 suites). UI: seletor de modo em App.tsx, mode badge + sugestões em ResultsPanel."
+      },
+      {
+        "date": "2026-07-09",
+        "event": "v6.8.1 — Total grams slack + combinatorial tests",
+        "details": "Slack de total grams adicionado em modo livre — ingredientes com max_inclusion_pct < ~13% (30-150g cap) causavam infeasible. +351 testes combinatoriais (26 singles + 325 pares) em modo livre. 420 testes, 0 falhas. scripts/reconcileIngredientSources.ts caminho corrigido. Deploy Netlify configurado."
       }
     ],
     "locked_decisions": [
@@ -876,8 +882,8 @@
     "git_log": "3 commits no repositório GitHub HansChucrute14/-gsd-diet-calc. Deploy Netlify configurado."
   },
   "current_state": {
-    "verdict": "Engine com goal programming funcional, slacks para constraints hard (DER, density, Ca:P). Dois modos de formatação: Livre (todos slack) e Ótimo (hard constraints c/ safety ceilings). suggestMissingIngredients() em infeasible. 69 testes passando (10 suites), typecheck limpo, 26 ingredientes reconciliados. Bloqueador principal: sem estágios de gestação/lactação nos dados. Progresso geral ~86%.",
-    "progress_pct": 86,
+    "verdict": "Engine com goal programming funcional, slacks para constraints hard (DER, density, Ca:P, total grams). Dois modos de formatação: Livre (todos slack) e Ótimo (hard constraints c/ safety ceilings). suggestMissingIngredients() em infeasible. Total grams slack corrigido — ingredientes com max_inclusion_pct baixo não causam mais infeasible. 420 testes passando (10 suites), typecheck limpo, build OK, 26 ingredientes reconciliados. Bloqueador principal: sem estágios de gestação/lactação nos dados. Progresso geral ~88%.",
+    "progress_pct": 88,
     "blocking_issues": [
       {
         "id": "B1",

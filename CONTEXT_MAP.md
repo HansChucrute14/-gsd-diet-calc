@@ -20,7 +20,8 @@
 | 2026-07-09 | Lote 2: Parser, UI, Worker | +18 testes (parser 6, banner 4, ResultsPanel 3, worker 2, engine 3), solver.worker.ts + workerPool.ts, guard duplicidade, jsdom config |
 | 2026-07-09 | v6.7.0 — Slack variables | +6 slack vars (DER, density, Ca:P) resolvem `infeasible` com 1 ingrediente. 65 testes, 0 regressão |
 | 2026-07-09 | v6.8.0 — Formulation modes | Modo Livre (todos slack) + Modo Ótimo (hard constraints c/ safety ceilings); sugestões em infeasible; filtro 0.5g removido. 41 testes engine (11 suites). |
-| 2026-07-09 | Movido para raiz | `gsd-diet-calc/` → raiz do repo para deploy Netlify |
+| 2026-07-09 | Movido para raiz | `gsd-diet-calc/` → raiz do repo para deploy Netlify. Paths de scripts corrigidos. |
+| 2026-07-09 | v6.8.1 — Total grams slack + testes combinatoriais | Slack total grams corrige infeasible em ingredientes com cap baixo. 351 testes combinatoriais (26 singles + 325 pares) em modo livre. 420 testes totais. |
 
 ## Arquitetura
 
@@ -66,9 +67,10 @@
 
 ## Testes
 
-- **41 testes engine**, 11 suites
+- **420 testes**, 10 suites (392 engine + 4 registry + 3 database-integrity + 1 solver-exception + 2 types + 3 freshness + 6 parser + 4 banner UI + 3 ResultsPanel + 2 worker pool)
 - `npx vitest run` — todos verdes
 - `npx tsc --noEmit` — clean
+- `npm run build` — OK (438KB JS + 10KB CSS + PWA)
 
 ## Project State Map
 
