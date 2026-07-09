@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-07-09T13:15:35.846Z",
+  "source_A": "COmplementar de estrategia v2.md",
+  "source_B": "Banco_de_Dados_Beta v0.3 - Dados Completos.md",
+  "ingredient_count_B": 26,
+  "ingredient_count_A_ingredients": 8,
+  "ingredient_count_merged": 26,
+  "stage_count": 5,
+  "collisions_resolved": [
+    {
+      "id": "coconut_oil_unrefined",
+      "field": "lp_constraints.max_inclusion_pct",
+      "value_from_A": 15,
+      "value_from_B": 100,
+      "winner": "A"
+    },
+    {
+      "id": "beef_trachea_raw",
+      "field": "lp_constraints.max_inclusion_pct",
+      "value_from_A": 20,
+      "value_from_B": 100,
+      "winner": "A"
+    },
+    {
+      "id": "pumpkin_seed_raw",
+      "field": "lp_constraints.max_inclusion_pct",
+      "value_from_A": 5,
+      "value_from_B": 100,
+      "winner": "A"
+    },
+    {
+      "id": "cod_liver_oil",
+      "field": "lp_constraints.max_inclusion_pct",
+      "value_from_A": 3,
+      "value_from_B": 100,
+      "winner": "A"
+    },
+    {
+      "id": "flaxseed_ground",
+      "field": "lp_constraints.max_inclusion_pct",
+      "value_from_A": 5,
+      "value_from_B": 100,
+      "winner": "A"
+    },
+    {
+      "id": "beef_pancreas_raw",
+      "field": "lp_constraints.max_inclusion_pct",
+      "value_from_A": 10,
+      "value_from_B": 100,
+      "winner": "A"
+    },
+    {
+      "id": "calcium_carbonate_food_grade",
+      "field": "lp_constraints.max_inclusion_pct",
+      "value_from_A": 2,
+      "value_from_B": 100,
+      "winner": "A"
+    }
+  ],
+  "internal_inconsistencies_flagged": [],
+  "unit_corrections_applied": [
+    {
+      "stage_id": "adult_maintenance",
+      "nutrient_id": "zinc",
+      "old_min": 120,
+      "old_max": 400,
+      "new_min": 20,
+      "new_max": 250
+    },
+    {
+      "stage_id": "senior_geriatric",
+      "nutrient_id": "zinc",
+      "old_min": 120,
+      "old_max": 400,
+      "new_min": 20,
+      "new_max": 250
+    },
+    {
+      "stage_id": "working_adult",
+      "nutrient_id": "zinc",
+      "old_min": 120,
+      "old_max": 400,
+      "new_min": 20,
+      "new_max": 250
+    }
+  ]
+}

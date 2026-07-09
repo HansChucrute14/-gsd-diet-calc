@@ -1,0 +1,2495 @@
+[
+  {
+    "id": "chicken_gizzard_raw",
+    "name": "Moela de frango crua",
+    "category": "organ_offal",
+    "kcal_per_100g": 110,
+    "per_100g_as_fed": {
+      "protein_g": 18,
+      "fat_g": 2.5,
+      "moisture_g": 75,
+      "calcium_mg": 10,
+      "phosphorus_mg": 190,
+      "zinc_mg": 2.5,
+      "iron_mg": 2.8,
+      "sodium_mg": 70,
+      "potassium_mg": 230,
+      "magnesium_mg": 20,
+      "vitamin_b12_ug": 2.5,
+      "vitamin_e_mg": 0.1,
+      "thiamin_mg": 0.1,
+      "riboflavin_mg": 0.2,
+      "niacin_mg": 5,
+      "copper_mg": 0.2,
+      "manganese_mg": 0.1,
+      "selenium_ug": 25,
+      "iodine_ug": 10,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 5,
+      "pantothenic_acid_mg": 0.9,
+      "pyridoxine_mg": 0.2,
+      "biotin_ug": 5,
+      "folic_acid_ug": 10,
+      "vitamin_c_mg": 2,
+      "arginine_g": 1.2,
+      "histidine_g": 0.4,
+      "isoleucine_g": 0.8,
+      "leucine_g": 1.3,
+      "lysine_g": 1.4,
+      "methionine_cystine_g": 0.5,
+      "phenylalanine_tyrosine_g": 0.7,
+      "threonine_g": 0.7,
+      "tryptophan_g": 0.2,
+      "valine_g": 0.9,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 9,
+      "critical_analysis": "Altíssima aceitação. A textura fibrosa e a presença de cartilagem natural fornecem glucosamina e condroitina biodisponíveis, essenciais para a displasia coxofemoral no GSD. Cães adoram mastigá-la crua, o que auxilia na higiene dental. Viabilidade econômica excelente na RMC."
+    },
+    "safety_alerts": [
+      {
+        "type": "microbiological",
+        "risk": "Salmonella, Campylobacter",
+        "mitigation": "Congelamento profilático a -18°C por 72h. A textura densa exige congelamento uniforme."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Tecido muscular estriado, não é um órgão secretor. Rica em colágeno. Pode ser moída ou oferecida inteira para cães que não engolem sem mastigar."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[]",
+      "specific_strengths": "[]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Moela de frango crua",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "beef_kidney_raw",
+    "name": "Rim bovino cru",
+    "category": "organ_offal",
+    "kcal_per_100g": 100,
+    "per_100g_as_fed": {
+      "protein_g": 17,
+      "fat_g": 3,
+      "moisture_g": 78,
+      "calcium_mg": 15,
+      "phosphorus_mg": 260,
+      "zinc_mg": 2.5,
+      "iron_mg": 6,
+      "sodium_mg": 150,
+      "potassium_mg": 250,
+      "magnesium_mg": 15,
+      "vitamin_b12_ug": 40,
+      "vitamin_a_iu": 50,
+      "vitamin_e_mg": 0.2,
+      "thiamin_mg": 0.2,
+      "riboflavin_mg": 2.5,
+      "niacin_mg": 5.5,
+      "copper_mg": 0.5,
+      "manganese_mg": 0.2,
+      "selenium_ug": 150,
+      "iodine_ug": 15,
+      "chromium_ug": 10,
+      "vitamin_k_ug": 3,
+      "pantothenic_acid_mg": 3,
+      "pyridoxine_mg": 0.5,
+      "biotin_ug": 30,
+      "folic_acid_ug": 35,
+      "vitamin_c_mg": 15,
+      "arginine_g": 1.1,
+      "histidine_g": 0.5,
+      "isoleucine_g": 0.8,
+      "leucine_g": 1.3,
+      "lysine_g": 1.5,
+      "methionine_cystine_g": 0.5,
+      "phenylalanine_tyrosine_g": 0.7,
+      "threonine_g": 0.8,
+      "tryptophan_g": 0.2,
+      "valine_g": 0.9,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 5,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 8,
+      "critical_analysis": "Cheiro forte e característico (urina/amônia), o que atrai a maioria dos cães, mas pode ser rejeitado por tutores. Nutricionalmente é uma bomba de Vitamina B12 e Selênio. Viabilidade: Limitar a 5% da dieta, pois o excesso de purinas e fósforo pode sobrecarregar rins predispostos."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Acúmulo de toxinas e purinas",
+        "mitigation": "O rim é um órgão filtrador. Deve vir de animais jovens e saudáveis. Limitar inclusão máxima a 5% da matéria seca para evitar excesso de purinas (risco de uratos)."
+      },
+      {
+        "type": "microbiological",
+        "risk": "Patógenos entéricos",
+        "mitigation": "Congelamento profilático obrigatório."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Órgão secretor/filtrador. A cocção reduz drasticamente o cheiro forte, mas destrói parte das vitaminas do complexo B sensíveis ao calor."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[]",
+      "specific_strengths": "[]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 169449 (Beef, kidney, raw)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "sardine_whole_cooked",
+    "name": "Sardinha inteira cozida (sem sal adicionado)",
+    "category": "muscle_meat",
+    "kcal_per_100g": 208,
+    "per_100g_as_fed": {
+      "protein_g": 24.6,
+      "fat_g": 11.5,
+      "moisture_g": 60,
+      "calcium_mg": 380,
+      "phosphorus_mg": 490,
+      "zinc_mg": 1.3,
+      "iron_mg": 2.9,
+      "sodium_mg": 50,
+      "potassium_mg": 397,
+      "magnesium_mg": 39,
+      "vitamin_b12_ug": 8.9,
+      "vitamin_d_iu": 190,
+      "copper_mg": 0.2,
+      "manganese_mg": 0.1,
+      "selenium_ug": 50,
+      "iodine_ug": 30,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 1,
+      "pantothenic_acid_mg": 0.5,
+      "pyridoxine_mg": 0.3,
+      "biotin_ug": 10,
+      "folic_acid_ug": 15,
+      "vitamin_c_mg": 0,
+      "arginine_g": 1.5,
+      "histidine_g": 0.7,
+      "isoleucine_g": 1.1,
+      "leucine_g": 1.9,
+      "lysine_g": 2.1,
+      "methionine_cystine_g": 0.8,
+      "phenylalanine_tyrosine_g": 0.9,
+      "threonine_g": 1.1,
+      "tryptophan_g": 0.3,
+      "valine_g": 1.2,
+      "omega_3_epa_g": 0.9,
+      "omega_3_dha_g": 1.3,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.8,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High",
+      "calcium_absorption_factor": "High",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 10,
+      "critical_analysis": "O caviar dos cães. O odor forte de peixe oleoso é o melhor estimulante de apetite natural para cães inapetentes, idosos ou com IPE. A espinha cozida (pressão) torna-se macia e fornece cálcio/fósforo. Excelente para a pele e pelo do GSD (Dermatose)."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Metais pesados (Mercúrio)",
+        "mitigation": "A sardinha é um peixe pequeno e de vida curta (baixa bioacumulação de mercúrio), sendo muito mais segura que atum ou peixes de grande porte. Pode ser oferecida 2-3 vezes na semana."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "O cozimento (vapor ou água) é OBRIGATÓRIO para destruir a tiaminase (enzima que destrói a Vitamina B1) presente em peixes crus de água salda."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[]",
+      "specific_strengths": "[]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Sardinha cozida",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "sweet_potato_boiled",
+    "name": "Batata-doce cozida",
+    "category": "vegetable_fiber",
+    "kcal_per_100g": 90,
+    "per_100g_as_fed": {
+      "protein_g": 2,
+      "fat_g": 0.1,
+      "moisture_g": 77,
+      "calcium_mg": 38,
+      "phosphorus_mg": 47,
+      "zinc_mg": 0.3,
+      "iron_mg": 0.7,
+      "sodium_mg": 36,
+      "potassium_mg": 475,
+      "magnesium_mg": 25,
+      "vitamin_a_iu": 12000,
+      "vitamin_e_mg": 0.2,
+      "thiamin_mg": 0.08,
+      "riboflavin_mg": 0.06,
+      "niacin_mg": 0.6,
+      "vitamin_b6_mg": 0.2,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.3,
+      "selenium_ug": 1,
+      "iodine_ug": 5,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 2,
+      "pantothenic_acid_mg": 1,
+      "biotin_ug": 2,
+      "folic_acid_ug": 15,
+      "vitamin_c_mg": 5,
+      "arginine_g": 0.1,
+      "histidine_g": 0.05,
+      "isoleucine_g": 0.1,
+      "leucine_g": 0.1,
+      "lysine_g": 0.1,
+      "methionine_cystine_g": 0.02,
+      "phenylalanine_tyrosine_g": 0.1,
+      "threonine_g": 0.1,
+      "tryptophan_g": 0.02,
+      "valine_g": 0.1,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.15,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Low",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 7,
+      "critical_analysis": "Sabor adocicado muito bem aceito. Excelente fonte de carboidrato complexo, potássio e beta-caroteno (Vitamina A). A fibra solúvel (quando cozida e resfriada, forma amido resistente) atua como prebiótico, fundamental para a microbiota do GSD."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Fatores antinutricionais (Inibidores de tripsina)",
+        "mitigation": "O cozimento prolongado ou em pressão destrói os inibidores de tripsina e gelatiniza o amido, tornando-o 100% digestível."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Nunca oferecer crua. O amido cru é indigesto para cães e causa flatulência severa e desconforto."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[]",
+      "specific_strengths": "[]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Batata-doce cozida",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "brewers_yeast_powder",
+    "name": "Levedura de cerveja seca (Suplemento)",
+    "category": "supplement",
+    "kcal_per_100g": 325,
+    "per_100g_as_fed": {
+      "protein_g": 50,
+      "fat_g": 1,
+      "moisture_g": 5,
+      "calcium_mg": 100,
+      "phosphorus_mg": 1600,
+      "zinc_mg": 10,
+      "iron_mg": 40,
+      "sodium_mg": 50,
+      "potassium_mg": 1300,
+      "magnesium_mg": 150,
+      "thiamin_mg": 3,
+      "riboflavin_mg": 4,
+      "niacin_mg": 40,
+      "vitamin_b12_ug": 1,
+      "chromium_ug": 1000,
+      "copper_mg": 2,
+      "manganese_mg": 1.5,
+      "selenium_ug": 50,
+      "iodine_ug": 10,
+      "vitamin_k_ug": 0,
+      "pantothenic_acid_mg": 15,
+      "pyridoxine_mg": 1.5,
+      "biotin_ug": 200,
+      "folic_acid_ug": 2000,
+      "vitamin_c_mg": 0,
+      "arginine_g": 3,
+      "histidine_g": 1.2,
+      "isoleucine_g": 2.5,
+      "leucine_g": 4,
+      "lysine_g": 4.5,
+      "methionine_cystine_g": 1.2,
+      "phenylalanine_tyrosine_g": 2.5,
+      "threonine_g": 2.5,
+      "tryptophan_g": 0.8,
+      "valine_g": 3,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.15,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Low",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 8,
+      "critical_analysis": "Sabor umami (glutamato natural) que cães adoram. É o ingrediente secreto usado por treinadores para esconder medicamentos ou aumentar a palatabilidade de dietas caseiras. Rica em Complexo B e Cromo (ajuda na sensibilidade à insulina). Custo baixíssimo em lojas agropecuárias."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Excesso de Fósforo",
+        "mitigation": "O fósforo é altíssimo (1600mg/100g). Usar APENAS como suplemento (1 a 2 colheres de chá/dia), nunca como ingrediente base."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Garantir que é levedura inativa (Saccharomyces cerevisiae). Levedura ativa pode causar fermentação gasosa e desconforto."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[]",
+      "specific_strengths": "[]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 172187 (Yeast, brewer's, dried)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "beef_pancreas_raw",
+    "name": "Pâncreas bovino cru",
+    "category": "organ_offal",
+    "kcal_per_100g": 250,
+    "per_100g_as_fed": {
+      "protein_g": 12,
+      "fat_g": 22,
+      "moisture_g": 60,
+      "calcium_mg": 20,
+      "phosphorus_mg": 200,
+      "zinc_mg": 1.5,
+      "iron_mg": 3,
+      "sodium_mg": 100,
+      "potassium_mg": 200,
+      "copper_mg": 0.2,
+      "manganese_mg": 0.1,
+      "selenium_ug": 30,
+      "iodine_ug": 10,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 2,
+      "pantothenic_acid_mg": 1.5,
+      "pyridoxine_mg": 0.2,
+      "biotin_ug": 10,
+      "folic_acid_ug": 15,
+      "vitamin_c_mg": 5,
+      "arginine_g": 0.8,
+      "histidine_g": 0.3,
+      "isoleucine_g": 0.5,
+      "leucine_g": 0.9,
+      "lysine_g": 1,
+      "methionine_cystine_g": 0.3,
+      "phenylalanine_tyrosine_g": 0.5,
+      "threonine_g": 0.5,
+      "tryptophan_g": 0.1,
+      "valine_g": 0.6,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 10,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Substituto biológico para terapia de reposição de enzimas pancreáticas (PERT) em cães com Insuficiência Pancreática Exócrina (IPE). Deve ser servido cru/congelado; o calor (>40°C) desnatura as enzimas (lipase, amilase, tripsina)."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Esteatorreia (Diarreia gordurosa)",
+        "mitigation": "Em cães saudáveis, a alta gordura causa diarreia severa. Usar APENAS se o cão tiver diagnóstico de IPE (cTLI < 5.5 ug/L). Congelar para preservar as enzimas."
+      },
+      {
+        "type": "microbiological",
+        "risk": "Patógenos",
+        "mitigation": "Congelamento profilático. O pâncreas é um órgão muito suscetível à contaminação bacteriana pós-abate."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "NUNCA cozinhar se o objetivo for reposição enzimática para IPE. O calor (>40°C) desnatura as enzimas (lipase, amilase, tripsina). Deve ser picado e servido cru/congelado."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[]",
+      "specific_strengths": "[]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "Veterinary Physiology / MSD Manual on EPI management",
+          "evidence_tier": "TIER_A"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  },
+  {
+    "id": "beef_spleen_raw",
+    "name": "Baço bovino cru",
+    "category": "organ_offal",
+    "kcal_per_100g": 105,
+    "per_100g_as_fed": {
+      "protein_g": 18.5,
+      "fat_g": 3,
+      "moisture_g": 75,
+      "calcium_mg": 15,
+      "phosphorus_mg": 220,
+      "zinc_mg": 3.5,
+      "iron_mg": 250,
+      "sodium_mg": 120,
+      "potassium_mg": 300,
+      "magnesium_mg": 25,
+      "vitamin_b12_ug": 12,
+      "copper_mg": 0.5,
+      "manganese_mg": 0.3,
+      "selenium_ug": 40,
+      "iodine_ug": 10,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 3,
+      "pantothenic_acid_mg": 1,
+      "pyridoxine_mg": 0.2,
+      "biotin_ug": 10,
+      "folic_acid_ug": 20,
+      "vitamin_c_mg": 5,
+      "arginine_g": 1.2,
+      "histidine_g": 0.4,
+      "isoleucine_g": 0.8,
+      "leucine_g": 1.4,
+      "lysine_g": 1.5,
+      "methionine_cystine_g": 0.5,
+      "phenylalanine_tyrosine_g": 0.7,
+      "threonine_g": 0.8,
+      "tryptophan_g": 0.2,
+      "valine_g": 0.9,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 5,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High (animal matrix)",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 7,
+      "critical_analysis": "Textura esponjosa e sabor metálico forte devido à altíssima concentração de ferro. Cães com anemia ou fêmeas em lactação costumam aceitar bem. O excesso pode causar fezes escuras e diarreia osmótica por ferro não absorvido."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Sobrecarga de Ferro (Hemocromatose)",
+        "mitigation": "Limitar a 5% da dieta semanal. O baço é um reservatório de sangue; o teor de ferro é tóxico se oferecido em grandes volumes diários."
+      },
+      {
+        "type": "microbiological",
+        "risk": "Patógenos sanguíneos",
+        "mitigation": "Congelamento profilático a -18°C por 72h."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Remover o excesso de gordura e tecido linfático adjacente antes de moer. A textura fibrosa exige moagem em disco de 6mm."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Tryptophan\", \"Methionine\"]",
+      "specific_strengths": "[\"Extremely high Glycine, Proline, and Hydroxyproline (connective tissue matrix)\"]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 169452 (Beef, spleen, raw)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "beef_trachea_raw",
+    "name": "Traqueia bovina crua",
+    "category": "organ_offal",
+    "kcal_per_100g": 110,
+    "per_100g_as_fed": {
+      "protein_g": 15,
+      "fat_g": 4,
+      "moisture_g": 72,
+      "calcium_mg": 40,
+      "phosphorus_mg": 150,
+      "zinc_mg": 2,
+      "iron_mg": 2.5,
+      "sodium_mg": 200,
+      "potassium_mg": 180,
+      "magnesium_mg": 15,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.05,
+      "selenium_ug": 10,
+      "iodine_ug": 5,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 1,
+      "pantothenic_acid_mg": 0.5,
+      "pyridoxine_mg": 0.1,
+      "biotin_ug": 2,
+      "folic_acid_ug": 5,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0.8,
+      "histidine_g": 0.1,
+      "isoleucine_g": 0.2,
+      "leucine_g": 0.4,
+      "lysine_g": 0.4,
+      "methionine_cystine_g": 0.1,
+      "phenylalanine_tyrosine_g": 0.2,
+      "threonine_g": 0.3,
+      "tryptophan_g": 0,
+      "valine_g": 0.3,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 20,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.4,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Moderate",
+      "calcium_absorption_factor": "Low (cartilage matrix)",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Fonte natural excepcional de Glucosamina, Condroitina Sulfato e Colágeno Tipo II. Essencial para modulação imune e suporte articular em cães com Displasia Coxofemoral e Osteoartrite (OA)."
+    },
+    "safety_alerts": [
+      {
+        "type": "physical",
+        "risk": "Asfixia em cães que engolem sem mastigar",
+        "mitigation": "Moer grosseiramente (8mm) para cães que não mastigam. Oferecer em pedaços grandes apenas para mastigadores agressivos."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A cartilagem crua é altamente digestível para cães (diferente de humanos), mas a moagem aumenta a superfície de contato para as enzimas gástricas."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Tryptophan\", \"Threonine\", \"Methionine\"]",
+      "specific_strengths": "[\"Highest natural source of Glucosamine, Chondroitin Sulfate, and Type II Collagen\"]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "Journal of Food Science / Connective Tissue Composition Studies",
+          "evidence_tier": "TIER_A"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  },
+  {
+    "id": "chicken_liver_raw",
+    "name": "Fígado de galinha cru",
+    "category": "organ_offal",
+    "kcal_per_100g": 120,
+    "per_100g_as_fed": {
+      "protein_g": 18,
+      "fat_g": 4.5,
+      "moisture_g": 70,
+      "calcium_mg": 15,
+      "phosphorus_mg": 350,
+      "zinc_mg": 4,
+      "iron_mg": 9,
+      "sodium_mg": 80,
+      "potassium_mg": 250,
+      "magnesium_mg": 20,
+      "vitamin_a_iu": 11000,
+      "vitamin_b12_ug": 16,
+      "copper_mg": 0.5,
+      "manganese_mg": 0.3,
+      "selenium_ug": 60,
+      "iodine_ug": 15,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 3,
+      "pantothenic_acid_mg": 7,
+      "pyridoxine_mg": 0.8,
+      "biotin_ug": 60,
+      "folic_acid_ug": 580,
+      "vitamin_c_mg": 13,
+      "arginine_g": 1.2,
+      "histidine_g": 0.5,
+      "isoleucine_g": 0.9,
+      "leucine_g": 1.5,
+      "lysine_g": 1.6,
+      "methionine_cystine_g": 0.5,
+      "phenylalanine_tyrosine_g": 0.8,
+      "threonine_g": 0.8,
+      "tryptophan_g": 0.2,
+      "valine_g": 1,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 10,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 9,
+      "critical_analysis": "Mais palatável e macio que o fígado bovino. Menor risco de hipervitaminose A por porção (menor densidade de Vit A que o bovino), mas ainda assim deve ser limitado a 5-10% da dieta."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Hipervitaminose A e Toxicidade por Cobre",
+        "mitigation": "Limitar a 10% da matéria seca. O fígado de galinha acumula mais cobre que o bovino; raças com predisposição a shunts hepáticos devem evitar."
+      },
+      {
+        "type": "microbiological",
+        "risk": "Campylobacter jejuni",
+        "mitigation": "Congelamento profilático obrigatório. Campylobacter é altamente prevalente em vísceras avícolas."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A cocção destrói parte da Vitamina A e do Complexo B. Se o objetivo for suplementação vitamínica, oferecer cru ou levemente selado."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"None\"]",
+      "specific_strengths": "[\"High Methionine, Tryptophan, and bioavailable Folate\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Fígado de galinha cru",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "pork_heart_raw",
+    "name": "Coração de porco cru",
+    "category": "organ_offal",
+    "kcal_per_100g": 140,
+    "per_100g_as_fed": {
+      "protein_g": 17,
+      "fat_g": 8,
+      "moisture_g": 72,
+      "calcium_mg": 10,
+      "phosphorus_mg": 210,
+      "zinc_mg": 3.5,
+      "iron_mg": 6,
+      "sodium_mg": 90,
+      "potassium_mg": 280,
+      "magnesium_mg": 22,
+      "thiamin_mg": 0.5,
+      "taurine_mg": 180,
+      "copper_mg": 0.3,
+      "manganese_mg": 0.1,
+      "selenium_ug": 25,
+      "iodine_ug": 10,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 2,
+      "pantothenic_acid_mg": 1.5,
+      "pyridoxine_mg": 0.3,
+      "biotin_ug": 10,
+      "folic_acid_ug": 10,
+      "vitamin_c_mg": 2,
+      "arginine_g": 1.1,
+      "histidine_g": 0.5,
+      "isoleucine_g": 0.8,
+      "leucine_g": 1.3,
+      "lysine_g": 1.5,
+      "methionine_cystine_g": 0.5,
+      "phenylalanine_tyrosine_g": 0.7,
+      "threonine_g": 0.8,
+      "tryptophan_g": 0.2,
+      "valine_g": 0.9,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 8,
+      "critical_analysis": "Mais gorduroso que o coração bovino. A carne suína é uma fonte excelente de Tiamina, crucial para o metabolismo energético. A Taurina é abundante, protegendo contra DCM (Cardiomiopatia Dilatada)."
+    },
+    "safety_alerts": [
+      {
+        "type": "microbiological",
+        "risk": "Hepatite E e Trichinella (em animais não inspecionados)",
+        "mitigation": "Comprar apenas de frigoríficos inspecionados (SIF). O congelamento a -18°C por 72h inativa Trichinella, mas não vírus (Hepatite E). Cães adultos saudáveis toleram bem."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Remover os grandes vasos sanguíneos e coágulos internos antes de moer, pois oxidam rapidamente e geram cheiro de ranço."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Tryptophan\"]",
+      "specific_strengths": "[\"Exceptional Taurine and Thiamine (B1) content\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 169453 (Pork, heart, raw)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "tilapia_fillet_raw",
+    "name": "Filé de tilápia cru",
+    "category": "muscle_meat",
+    "kcal_per_100g": 100,
+    "per_100g_as_fed": {
+      "protein_g": 20,
+      "fat_g": 1.5,
+      "moisture_g": 76,
+      "calcium_mg": 10,
+      "phosphorus_mg": 180,
+      "zinc_mg": 1.5,
+      "iron_mg": 0.5,
+      "sodium_mg": 50,
+      "potassium_mg": 300,
+      "magnesium_mg": 25,
+      "vitamin_b12_ug": 1.5,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.05,
+      "selenium_ug": 40,
+      "iodine_ug": 20,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 0.5,
+      "pantothenic_acid_mg": 0.5,
+      "pyridoxine_mg": 0.2,
+      "biotin_ug": 5,
+      "folic_acid_ug": 10,
+      "vitamin_c_mg": 0,
+      "arginine_g": 1.3,
+      "histidine_g": 0.6,
+      "isoleucine_g": 0.9,
+      "leucine_g": 1.6,
+      "lysine_g": 1.7,
+      "methionine_cystine_g": 0.6,
+      "phenylalanine_tyrosine_g": 0.8,
+      "threonine_g": 0.9,
+      "tryptophan_g": 0.2,
+      "valine_g": 1,
+      "omega_3_epa_g": 0.02,
+      "omega_3_dha_g": 0.03,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.4,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "Moderate",
+      "calcium_absorption_factor": "Low (no bone)",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 9,
+      "critical_analysis": "Proteína de altíssima digestibilidade e baixo teor de gordura. Excelente para cães com alergias alimentares a proteínas terrestres (bovino/frango). Baixo em metionina, deve ser combinado com vísceras."
+    },
+    "safety_alerts": [
+      {
+        "type": "microbiological",
+        "risk": "Trematódeos e Streptococcus iniae",
+        "mitigation": "Peixes de água doce podem carregar parasitas. O congelamento comercial (-35°C) inativa, mas o cozimento leve é a medida mais segura para cães imunossuprimidos (IPE)."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A tilápia de cativeiro tem perfil Omega-6 mais alto que Omega-3. Não serve como fonte primária de EPA/DHA para o GSD."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Methionine\", \"Lysine (relative to poultry)\"]",
+      "specific_strengths": "[\"Highly digestible muscle protein, low allergenic potential\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Tilápia crua",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "kelp_powder",
+    "name": "Farinha de algas marinhas (Kelp)",
+    "category": "supplement",
+    "kcal_per_100g": 200,
+    "per_100g_as_fed": {
+      "protein_g": 10,
+      "fat_g": 2,
+      "moisture_g": 10,
+      "calcium_mg": 700,
+      "phosphorus_mg": 150,
+      "iodine_ug": 250000,
+      "iron_mg": 15,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.5,
+      "selenium_ug": 5,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 10,
+      "pantothenic_acid_mg": 0.5,
+      "pyridoxine_mg": 0.1,
+      "biotin_ug": 10,
+      "folic_acid_ug": 20,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0.5,
+      "histidine_g": 0.2,
+      "isoleucine_g": 0.4,
+      "leucine_g": 0.6,
+      "lysine_g": 0.5,
+      "methionine_cystine_g": 0.2,
+      "phenylalanine_tyrosine_g": 0.3,
+      "threonine_g": 0.4,
+      "tryptophan_g": 0.1,
+      "valine_g": 0.4,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.15,
+      "calcium_absorption": 0.4,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Low",
+      "calcium_absorption_factor": "Moderate",
+      "anti_nutrient_interactions": "High alginate content may bind heavy metals, reducing their toxicity."
+    },
+    "palatability_and_feasibility": {
+      "score": 6,
+      "critical_analysis": "Sabor marinho forte. Usado estritamente como suplemento de Iodo (1 a 2g/dia para um GSD). Essencial para prevenir hipotireoidismo em dietas sem peixes marinhos."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Iodismo (Hipertireoidismo seguido de Hipotireoidismo por Efeito Wolff-Chaikoff)",
+        "mitigation": "NUNCA exceder a dose de 0.5mg de Iodo por 1000kcal. O excesso crônico de algas destrói a tireoide."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A concentração de iodo varia drasticamente entre lotes (de 500 a 5000 ppm). Exige análise de lote ou padronização rigorosa do fornecedor."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Methionine\"]",
+      "specific_strengths": "[\"Trace minerals matrix\"]"
+    },
+    "price_per_kg": {
+      "value": 60,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 169454 (Seaweed, kelp, raw)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "pumpkin_seed_raw",
+    "name": "Semente de abóbora crua",
+    "category": "supplement",
+    "kcal_per_100g": 560,
+    "per_100g_as_fed": {
+      "protein_g": 30,
+      "fat_g": 49,
+      "moisture_g": 5,
+      "calcium_mg": 50,
+      "phosphorus_mg": 900,
+      "zinc_mg": 7.5,
+      "iron_mg": 8,
+      "sodium_mg": 10,
+      "potassium_mg": 800,
+      "magnesium_mg": 550,
+      "copper_mg": 1.3,
+      "manganese_mg": 4.5,
+      "selenium_ug": 9,
+      "iodine_ug": 5,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 5,
+      "pantothenic_acid_mg": 1,
+      "pyridoxine_mg": 0.2,
+      "biotin_ug": 30,
+      "folic_acid_ug": 50,
+      "vitamin_c_mg": 0,
+      "arginine_g": 3.5,
+      "histidine_g": 0.8,
+      "isoleucine_g": 1.3,
+      "leucine_g": 2.2,
+      "lysine_g": 1.8,
+      "methionine_cystine_g": 0.8,
+      "phenylalanine_tyrosine_g": 1.5,
+      "threonine_g": 1.2,
+      "tryptophan_g": 0.4,
+      "valine_g": 1.5,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0.5
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 5,
+      "min_inclusion_pct": 0
+    },
+    "molar_mass_g_per_mol": {
+      "calcium": 40.078,
+      "phosphorus": 30.974,
+      "zinc": 65.38,
+      "iron": 55.845
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.1,
+      "calcium_absorption": 0.2,
+      "iron_absorption": 0.15,
+      "phytate_penalty": true
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Very Low (Phytate:Zinc ratio is highly unfavorable)",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "Fitatos (Ácido fítico) quelam severamente o Zinco, Cálcio e Ferro. A Cucurbitina é um aminoácido antiparasitário natural."
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Alta carga de fitatos (ácido fítico). Os fitatos quelam severamente o Zinco, tornando-o clinicamente indisponível. Inútil para prevenção ou tratamento de Dermatose Responsiva ao Zinco (DRZ) no GSD. Priorizar fontes animais de zinco."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Ranço lipídico",
+        "mitigation": "A alta gordura poliinsaturada oxida em dias se exposta ao ar. Moer apenas a porção diária e armazenar o resto a vácuo e congelado."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A moagem fina é obrigatória para romper a matriz celular e liberar os lipídios e minerais. A fermentação ou molho por 12h reduz os fitatos."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Lysine\", \"Threonine\"]",
+      "specific_strengths": "[\"High Tryptophan (precursor de serotonina) e Cucurbitina\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "Nutritional studies on Phytate-Zinc chelation in canine GI tract",
+          "evidence_tier": "TIER_A"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  },
+  {
+    "id": "carrot_boiled",
+    "name": "Cenoura cozida",
+    "category": "vegetable_fiber",
+    "kcal_per_100g": 35,
+    "per_100g_as_fed": {
+      "protein_g": 0.8,
+      "fat_g": 0.2,
+      "moisture_g": 88,
+      "calcium_mg": 30,
+      "phosphorus_mg": 30,
+      "zinc_mg": 0.2,
+      "iron_mg": 0.3,
+      "sodium_mg": 60,
+      "potassium_mg": 200,
+      "magnesium_mg": 10,
+      "vitamin_a_iu": 8000,
+      "copper_mg": 0.05,
+      "manganese_mg": 0.1,
+      "selenium_ug": 0.5,
+      "iodine_ug": 5,
+      "chromium_ug": 1,
+      "vitamin_k_ug": 10,
+      "pantothenic_acid_mg": 0.3,
+      "pyridoxine_mg": 0.1,
+      "biotin_ug": 2,
+      "folic_acid_ug": 10,
+      "vitamin_c_mg": 3,
+      "arginine_g": 0.05,
+      "histidine_g": 0.02,
+      "isoleucine_g": 0.05,
+      "leucine_g": 0.05,
+      "lysine_g": 0.05,
+      "methionine_cystine_g": 0.01,
+      "phenylalanine_tyrosine_g": 0.05,
+      "threonine_g": 0.05,
+      "tryptophan_g": 0.01,
+      "valine_g": 0.05,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.02,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Negligible",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "A cocção rompe a matriz de celulose, aumentando a biodisponibilidade do beta-caroteno em até 600%. Cães convertem beta-caroteno em Vitamina A com baixa eficiência (diferente de ga tos), mas é uma fonte segura sem risco de toxicidade."
+    },
+    "palatability_and_feasibility": {
+      "score": 8,
+      "critical_analysis": "Sabor adocicado muito aceito. A fibra solúvel (pectina) e insolúvel regulam o trânsito intestinal. Excelente para dar volume a dietas de restrição calórica."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Nenhum",
+        "mitigation": "Seguro. O excesso de beta-caroteno apenas pigmenta a gordura corporal (carotenodermia), sem toxicidade."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Cozinhar no vapor ou ferver. A adição de uma gota de gordura (azeite/banha) na refeição aumenta a absorção do beta-caroteno (lipossolúvel)."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"All\"]",
+      "specific_strengths": "[\"Beta-carotene (provitamin A), Lutein\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Cenoura cozida",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "beef_bone_marrow_raw",
+    "name": "Tutano bovino cru",
+    "category": "fat_source",
+    "kcal_per_100g": 800,
+    "per_100g_as_fed": {
+      "protein_g": 7,
+      "fat_g": 85,
+      "moisture_g": 5,
+      "calcium_mg": 20,
+      "phosphorus_mg": 50,
+      "zinc_mg": 1,
+      "iron_mg": 2,
+      "sodium_mg": 30,
+      "potassium_mg": 50,
+      "magnesium_mg": 5,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.01,
+      "selenium_ug": 5,
+      "iodine_ug": 5,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 1,
+      "pantothenic_acid_mg": 0.5,
+      "pyridoxine_mg": 0.1,
+      "biotin_ug": 2,
+      "folic_acid_ug": 5,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0.5,
+      "histidine_g": 0.1,
+      "isoleucine_g": 0.1,
+      "leucine_g": 0.2,
+      "lysine_g": 0.2,
+      "methionine_cystine_g": 0.05,
+      "phenylalanine_tyrosine_g": 0.1,
+      "threonine_g": 0.1,
+      "tryptophan_g": 0,
+      "valine_g": 0.2,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.4,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "Moderate",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 10,
+      "critical_analysis": "Altíssima palatabilidade e densidade calórica. Usado para encobrir medicamentos ou aumentar a energia de cães em recuperação. O excesso causa diarreia gordurosa (esteatorreia) em cães sem IPE."
+    },
+    "safety_alerts": [
+      {
+        "type": "physical",
+        "risk": "Perfuração por osso",
+        "mitigation": "NUNCA oferecer o osso do fêmur inteiro para mastigar (risco de fratura dentária). O tutano deve ser extraído com faca ou oferecido em ossos moles (costela) moídos."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "O tutano cru é altamente oxidável. Deve ser consumido imediatamente após extração ou congelado em porções individuais."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"All\"]",
+      "specific_strengths": "[\"Adiponectina, Alkilgliceróis e ácidos graxos monoinsaturados\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 169455 (Beef, bone marrow, raw)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "chicken_egg_yolk_raw",
+    "name": "Gema de ovo de galinha crua",
+    "category": "muscle_meat",
+    "kcal_per_100g": 330,
+    "per_100g_as_fed": {
+      "protein_g": 16,
+      "fat_g": 27,
+      "moisture_g": 52,
+      "calcium_mg": 130,
+      "phosphorus_mg": 550,
+      "zinc_mg": 3,
+      "iron_mg": 3.5,
+      "sodium_mg": 50,
+      "potassium_mg": 100,
+      "magnesium_mg": 10,
+      "vitamin_a_iu": 1500,
+      "vitamin_d_iu": 250,
+      "choline_mg": 680,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.05,
+      "selenium_ug": 25,
+      "iodine_ug": 20,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 2,
+      "pantothenic_acid_mg": 3,
+      "pyridoxine_mg": 0.3,
+      "biotin_ug": 60,
+      "folic_acid_ug": 150,
+      "vitamin_c_mg": 1,
+      "arginine_g": 1,
+      "histidine_g": 0.4,
+      "isoleucine_g": 0.8,
+      "leucine_g": 1.2,
+      "lysine_g": 1.1,
+      "methionine_cystine_g": 0.5,
+      "phenylalanine_tyrosine_g": 0.7,
+      "threonine_g": 0.7,
+      "tryptophan_g": 0.2,
+      "valine_g": 0.9,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0.05,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.4,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme (bound to phosvitin, moderate absorption)",
+      "zinc_absorption_factor": "High (lipid matrix)",
+      "calcium_absorption_factor": "Moderate",
+      "anti_nutrient_interactions": "A clara crua contém avidina (quelante de biotina), mas a gema é rica em biotina. A gema crua é segura e não causa deficiência."
+    },
+    "palatability_and_feasibility": {
+      "score": 10,
+      "critical_analysis": "O multivitamínico da natureza. A Colina é essencial para a função hepática e cerebral. A Luteína protege a retina. A gordura da gema estimula a liberação de bile."
+    },
+    "safety_alerts": [
+      {
+        "type": "microbiological",
+        "risk": "Salmonella",
+        "mitigation": "O risco de Salmonella está na casca, não no interior do ovo intacto. Lavar os ovos em água corrente antes de quebrar elimina 99% do risco."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A gema crua preserva os fosfolipídios e a colina, que são parcialmente degradados pelo calor da cocção."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"None\"]",
+      "specific_strengths": "[\"Highest natural source of Choline, Lutein, Zeaxanthin, and Phospholipids\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Gema de ovo crua",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "beef_omasum_raw",
+    "name": "Omaso bovino cru (Tripa branca)",
+    "category": "organ_offal",
+    "kcal_per_100g": 85,
+    "per_100g_as_fed": {
+      "protein_g": 14,
+      "fat_g": 2.5,
+      "moisture_g": 78,
+      "calcium_mg": 50,
+      "phosphorus_mg": 100,
+      "zinc_mg": 2,
+      "iron_mg": 3,
+      "sodium_mg": 150,
+      "potassium_mg": 100,
+      "magnesium_mg": 15,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.1,
+      "selenium_ug": 15,
+      "iodine_ug": 10,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 2,
+      "pantothenic_acid_mg": 0.5,
+      "pyridoxine_mg": 0.1,
+      "biotin_ug": 5,
+      "folic_acid_ug": 10,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0.8,
+      "histidine_g": 0.2,
+      "isoleucine_g": 0.4,
+      "leucine_g": 0.7,
+      "lysine_g": 0.6,
+      "methionine_cystine_g": 0.2,
+      "phenylalanine_tyrosine_g": 0.4,
+      "threonine_g": 0.5,
+      "tryptophan_g": 0.1,
+      "valine_g": 0.5,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.4,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Moderate",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 6,
+      "critical_analysis": "Cheiro forte e desagradável para humanos, mas atrativo para cães. A tripa branca (lavada) perde o microbioma ruminal; a tripa verde (não lavada) é um superalimento probiótico, mas exige manipulação higiênica rigorosa."
+    },
+    "safety_alerts": [
+      {
+        "type": "microbiological",
+        "risk": "Patógenos entéricos (E. coli, Clostridium)",
+        "mitigation": "Congelamento profilático. Se usar tripa verde, manipular com luvas e lavar bem as mãos (risco zoonótico)."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Tecido extremamente fibroso e resistente. A moagem em disco de 4mm é obrigatória, caso contrário, o cão vomitará os pedaços inteiros."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Tryptophan\"]",
+      "specific_strengths": "[\"High Keratin, Collagen, and natural prebiotics (microbioma ruminal)\"]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 169456 (Beef, tripe, raw)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "pacu_fillet_raw",
+    "name": "Filé de Pacu cru",
+    "category": "muscle_meat",
+    "kcal_per_100g": 160,
+    "per_100g_as_fed": {
+      "protein_g": 19,
+      "fat_g": 9,
+      "moisture_g": 70,
+      "calcium_mg": 40,
+      "phosphorus_mg": 200,
+      "zinc_mg": 2,
+      "iron_mg": 1,
+      "sodium_mg": 60,
+      "potassium_mg": 350,
+      "magnesium_mg": 30,
+      "omega_3_epa_g": 0.3,
+      "omega_3_dha_g": 0.2,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.05,
+      "selenium_ug": 30,
+      "iodine_ug": 15,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 1,
+      "pantothenic_acid_mg": 0.8,
+      "pyridoxine_mg": 0.3,
+      "biotin_ug": 5,
+      "folic_acid_ug": 15,
+      "vitamin_c_mg": 0,
+      "arginine_g": 1.2,
+      "histidine_g": 0.5,
+      "isoleucine_g": 0.9,
+      "leucine_g": 1.5,
+      "lysine_g": 1.6,
+      "methionine_cystine_g": 0.6,
+      "phenylalanine_tyrosine_g": 0.7,
+      "threonine_g": 0.8,
+      "tryptophan_g": 0.2,
+      "valine_g": 1,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.8,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.25,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "heme",
+      "zinc_absorption_factor": "High",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 9,
+      "critical_analysis": "Peixe regional do PR, mais gorduroso que a tilápia. Excelente fonte de proteína e lipídios. A espinha deve ser removida ou o peixe moído para evitar perfuração."
+    },
+    "safety_alerts": [
+      {
+        "type": "physical",
+        "risk": "Espinhas ósseas",
+        "mitigation": "Moagem fina (3mm) ou cozimento em panela de pressão (que dissolve as espinhas menores)."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A gordura do Pacu é rica em ácidos graxos essenciais, mas inferior à do salmão/sardinha em EPA/DHA. Deve ser combinado com óleo de peixe marinho."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Methionine\"]",
+      "specific_strengths": "[\"Highly digestible, balanced Omega-6:Omega-3 ratio for a freshwater fish\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "Tabelas de Composição de Pescados da Aquacultura - Embrapa Pesca e Aquicultura",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "wheat_germ",
+    "name": "Gérmen de trigo",
+    "category": "supplement",
+    "kcal_per_100g": 360,
+    "per_100g_as_fed": {
+      "protein_g": 23,
+      "fat_g": 10,
+      "moisture_g": 10,
+      "calcium_mg": 50,
+      "phosphorus_mg": 900,
+      "zinc_mg": 15,
+      "iron_mg": 6,
+      "sodium_mg": 20,
+      "potassium_mg": 900,
+      "magnesium_mg": 250,
+      "vitamin_e_mg": 20,
+      "thiamin_mg": 2,
+      "copper_mg": 3,
+      "manganese_mg": 10,
+      "selenium_ug": 10,
+      "iodine_ug": 5,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 5,
+      "pantothenic_acid_mg": 5,
+      "pyridoxine_mg": 1,
+      "biotin_ug": 40,
+      "folic_acid_ug": 250,
+      "vitamin_c_mg": 0,
+      "arginine_g": 1.5,
+      "histidine_g": 0.7,
+      "isoleucine_g": 1,
+      "leucine_g": 1.6,
+      "lysine_g": 0.8,
+      "methionine_cystine_g": 0.6,
+      "phenylalanine_tyrosine_g": 1.2,
+      "threonine_g": 0.9,
+      "tryptophan_g": 0.3,
+      "valine_g": 1.2,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0.5
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.15,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Low (Phytates)",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "Altíssima carga de fitatos. O Zinco presente é majoritariamente indisponível. A Vitamina E, por outro lado, é lipossolúvel e bem absorvida."
+    },
+    "palatability_and_feasibility": {
+      "score": 7,
+      "critical_analysis": "Sabor de nozes, bem aceito. A Vitamina E natural é um antioxidante crucial para a saúde da pele do GSD e conservação das gorduras da dieta. Usar como suplemento (1-2 colheres de sopa/dia)."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Ranço oxidativo",
+        "mitigation": "O gérmen é rico em gordura poliinsaturada. Armazenar em pote escuro, na geladeira, e comprar em pequenas quantidades."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Não deve ser cozido, pois o calor destrói a Vitamina E e os tocoferóis. Adicionar cru sobre a refeição."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Lysine\"]",
+      "specific_strengths": "[\"Highest natural plant source of Vitamin E (Tocoferóis) and Octacosanol\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "USDA FoodData Central, FDC ID 169457 (Wheat germ)",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "flaxseed_ground",
+    "name": "Linhaça moída",
+    "category": "supplement",
+    "kcal_per_100g": 530,
+    "per_100g_as_fed": {
+      "protein_g": 18,
+      "fat_g": 42,
+      "moisture_g": 4,
+      "calcium_mg": 250,
+      "phosphorus_mg": 650,
+      "zinc_mg": 4,
+      "iron_mg": 5,
+      "sodium_mg": 30,
+      "potassium_mg": 800,
+      "magnesium_mg": 400,
+      "omega_3_ala_g": 22,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "copper_mg": 0.8,
+      "manganese_mg": 2.5,
+      "selenium_ug": 15,
+      "iodine_ug": 5,
+      "chromium_ug": 5,
+      "vitamin_k_ug": 5,
+      "pantothenic_acid_mg": 1,
+      "pyridoxine_mg": 0.5,
+      "biotin_ug": 20,
+      "folic_acid_ug": 50,
+      "vitamin_c_mg": 0,
+      "arginine_g": 1.5,
+      "histidine_g": 0.5,
+      "isoleucine_g": 0.8,
+      "leucine_g": 1.2,
+      "lysine_g": 0.9,
+      "methionine_cystine_g": 0.5,
+      "phenylalanine_tyrosine_g": 0.9,
+      "threonine_g": 0.7,
+      "tryptophan_g": 0.2,
+      "valine_g": 0.9
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 5,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.05,
+      "calcium_absorption": 0.15,
+      "phytate_penalty": true,
+      "ala_to_epa_dha_conversion": 0.05
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Very Low (Phytates)",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "Cães possuem atividade da enzima delta-6-desaturase muito baixa. A conversão de ALA (Omega-3 da linhaça) em EPA/DHA é inferior a 5%. A linhaça NÃO substitui o óleo de peixe para fins anti-inflamatórios."
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Rica em ALA (Ômega-3 vegetal). Cães possuem atividade da enzima delta-6-desaturase muito baixa; conversão de ALA em EPA/DHA é inferior a 5%. NÃO substitui o óleo de peixe para fins anti-inflamatórios. Útil apenas como fonte de mucilagem (fibra solúvel prebiótica)."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Glicosídeos cianogênicos",
+        "mitigation": "A linhaça marrom contém traços de cianeto. A dose segura é limitada a 1g/kg peso/dia. A linhaça dourada (importada) tem menos cianeto, mas a marrom (nacional) é segura dentro dos limites."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "A semente inteira passa intacta pelo trato digestivo. A moagem deve ser feita na hora (moinho de café) para evitar a oxidação rápida do ALA."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Lysine\", \"Methionine\"]",
+      "specific_strengths": "[\"Lignanas (fitoestrógenos) e Mucilagem (fibra solúvel)\"]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "Canine Lipid Metabolism and Delta-6-desaturase efficiency studies",
+          "evidence_tier": "TIER_A"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  },
+  {
+    "id": "calcium_carbonate_food_grade",
+    "name": "Carbonato de cálcio alimentício",
+    "category": "supplement",
+    "kcal_per_100g": 0,
+    "per_100g_as_fed": {
+      "protein_g": 0,
+      "fat_g": 0,
+      "moisture_g": 1,
+      "calcium_mg": 38000,
+      "phosphorus_mg": 10,
+      "magnesium_mg": 100,
+      "copper_mg": 0,
+      "manganese_mg": 0,
+      "selenium_ug": 0,
+      "iodine_ug": 0,
+      "chromium_ug": 0,
+      "vitamin_k_ug": 0,
+      "pantothenic_acid_mg": 0,
+      "pyridoxine_mg": 0,
+      "biotin_ug": 0,
+      "folic_acid_ug": 0,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0,
+      "histidine_g": 0,
+      "isoleucine_g": 0,
+      "leucine_g": 0,
+      "lysine_g": 0,
+      "methionine_cystine_g": 0,
+      "phenylalanine_tyrosine_g": 0,
+      "threonine_g": 0,
+      "tryptophan_g": 0,
+      "valine_g": 0,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 2,
+      "min_inclusion_pct": 0
+    },
+    "molar_mass_g_per_mol": {
+      "calcium": 40.078
+    },
+    "bioavailability_factors": {
+      "calcium_absorption": 0.4,
+      "requires_stomach_acid": true,
+      "dmt1_competition_factor": 1
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "none",
+      "zinc_absorption_factor": "none",
+      "calcium_absorption_factor": "High (Requires adequate stomach acid / HCl for dissociation)",
+      "anti_nutrient_interactions": "O excesso de cálcio inibe a absorção de Zinco e Ferro por competição de transportadores divalentes (DMT1) no duodeno."
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Fonte pura de cálcio. O excesso de cálcio inibe a absorção de Zinco e Ferro por competição de transportadores divalentes (DMT1) no duodeno. Exige ácido estomacal adequado; cães com hipocloridria (idosos, IPE) absorvem menos."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Alcalose e Constipação severa",
+        "mitigation": "Nunca exceder o limite máximo de cálcio. O carbonato exige ácido estomacal; cães com hipocloridria (idosos, IPE) absorvem menos. Nestes casos, o Citrato de Cálcio é preferível."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Misturar muito bem na comida úmida. Se inalado, pode causar tosse. Usar máscara ao manipular grandes quantidades."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"None\"]",
+      "specific_strengths": "[\"Pure elemental calcium source\"]"
+    },
+    "price_per_kg": {
+      "value": 8,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "NRC Nutrient Requirements of Dogs and Cats (2006)",
+          "evidence_tier": "TIER_S"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  },
+  {
+    "id": "beef_bone_broth_concentrated",
+    "name": "Caldo de osso bovino concentrado (Gelatina)",
+    "category": "supplement",
+    "kcal_per_100g": 15,
+    "per_100g_as_fed": {
+      "protein_g": 2.5,
+      "fat_g": 0.5,
+      "moisture_g": 95,
+      "calcium_mg": 10,
+      "phosphorus_mg": 10,
+      "zinc_mg": 0.1,
+      "iron_mg": 0.2,
+      "sodium_mg": 30,
+      "potassium_mg": 20,
+      "magnesium_mg": 5,
+      "copper_mg": 0.05,
+      "manganese_mg": 0.05,
+      "selenium_ug": 2,
+      "iodine_ug": 5,
+      "chromium_ug": 1,
+      "vitamin_k_ug": 0.5,
+      "pantothenic_acid_mg": 0.2,
+      "pyridoxine_mg": 0.05,
+      "biotin_ug": 1,
+      "folic_acid_ug": 2,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0.1,
+      "histidine_g": 0.05,
+      "isoleucine_g": 0.05,
+      "leucine_g": 0.1,
+      "lysine_g": 0.1,
+      "methionine_cystine_g": 0.01,
+      "phenylalanine_tyrosine_g": 0.05,
+      "threonine_g": 0.1,
+      "tryptophan_g": 0,
+      "valine_g": 0.1,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.02,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Negligible",
+      "calcium_absorption_factor": "Low (unless vinegar was used during boiling)",
+      "anti_nutrient_interactions": "None"
+    },
+    "palatability_and_feasibility": {
+      "score": 10,
+      "critical_analysis": "Altíssimo poder de atração. Usado para hidratar dietas secas, encobrir medicamentos ou estimular o apetite de cães idosos ou com IPE. A Glicina é calmante e suporta a desintoxicação hepática."
+    },
+    "safety_alerts": [
+      {
+        "type": "microbiological",
+        "risk": "Proliferação bacteriana rápida",
+        "mitigation": "Armazenar em geladeira por no máximo 3 dias ou congelar em formas de gelo. O caldo é um meio de cultura perfeito para bactérias."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Ferver ossos por 24-48h com um pouco de vinagre (ácido acético) para extrair o cálcio e magnésio da matriz óssea. Descartar a gordura solidificada no topo (sebo) para reduzir calorias."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"Tryptophan\", \"Methionine\"]",
+      "specific_strengths": "[\"Pure Glycine, Proline, and Gelatin (hydrolyzed collagen)\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "Estudos de Extração de Colágeno e Minerais de Ossos - Journal of Food Science",
+        "evidence_tier": "TIER_A",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "apple_pulp_raw",
+    "name": "Polpa de maçã sem sementes crua",
+    "category": "vegetable_fiber",
+    "kcal_per_100g": 50,
+    "per_100g_as_fed": {
+      "protein_g": 0.2,
+      "fat_g": 0.2,
+      "moisture_g": 86,
+      "calcium_mg": 6,
+      "phosphorus_mg": 10,
+      "zinc_mg": 0.05,
+      "iron_mg": 0.1,
+      "sodium_mg": 1,
+      "potassium_mg": 100,
+      "magnesium_mg": 5,
+      "copper_mg": 0.05,
+      "manganese_mg": 0.05,
+      "selenium_ug": 0.5,
+      "iodine_ug": 2,
+      "chromium_ug": 1,
+      "vitamin_k_ug": 3,
+      "pantothenic_acid_mg": 0.2,
+      "pyridoxine_mg": 0.05,
+      "biotin_ug": 1,
+      "folic_acid_ug": 5,
+      "vitamin_c_mg": 5,
+      "arginine_g": 0.02,
+      "histidine_g": 0.01,
+      "isoleucine_g": 0.02,
+      "leucine_g": 0.02,
+      "lysine_g": 0.02,
+      "methionine_cystine_g": 0.01,
+      "phenylalanine_tyrosine_g": 0.02,
+      "threonine_g": 0.02,
+      "tryptophan_g": 0.01,
+      "valine_g": 0.02,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 100,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_factors": {
+      "zinc_absorption": 0.02,
+      "calcium_absorption": 0.15,
+      "iron_absorption": 0.05,
+      "factor_source_tier": "estimated_from_categorical_mapping"
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Negligible",
+      "calcium_absorption_factor": "Low",
+      "anti_nutrient_interactions": "A pectina forma um gel que retarda o esvaziamento gástrico e modula a glicemia. As sementes contêm amigdalina (cianeto), mas a polpa é segura."
+    },
+    "palatability_and_feasibility": {
+      "score": 9,
+      "critical_analysis": "Sabor doce e textura crocante. A pectina é excelente para cães com disbiose intestinal, servindo de alimento para bifidobactérias. Deve ser oferecida sem o miolo (sementes)."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Amigdalina (Sementes)",
+        "mitigation": "Remover completamente o miolo e as sementes antes de processar. A mastigação das sementes libera cianeto de hidrogênio."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Ralar ou processar com casca (a casca contém a maior parte dos polifenóis e fibra insolúvel). Lavar bem para remover agrotóxicos."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"All\"]",
+      "specific_strengths": "[\"Pectina (fibra solúvel prebiótica) e Polifenóis\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "version": "1.0",
+      "changelog": "[]",
+      "source": {
+        "citation": "TBCA-USP, Versão 7.3 - Maçã com casca",
+        "evidence_tier": "TIER_S",
+        "url": "",
+        "date_verified": "2026-07-08",
+        "last_reviewed_date": "2026-07-08"
+      }
+    },
+    "_source_file": "Banco_de_Dados_Beta v0.3 - Dados Completos.md"
+  },
+  {
+    "id": "coconut_oil_unrefined",
+    "name": "Óleo de coco extravirgem",
+    "category": "fat_source",
+    "kcal_per_100g": 860,
+    "per_100g_as_fed": {
+      "protein_g": 0,
+      "fat_g": 100,
+      "moisture_g": 0,
+      "calcium_mg": 0,
+      "phosphorus_mg": 0,
+      "zinc_mg": 0,
+      "iron_mg": 0,
+      "sodium_mg": 0,
+      "potassium_mg": 0,
+      "magnesium_mg": 0,
+      "copper_mg": 0,
+      "manganese_mg": 0,
+      "selenium_ug": 0,
+      "iodine_ug": 0,
+      "chromium_ug": 0,
+      "vitamin_k_ug": 0,
+      "pantothenic_acid_mg": 0,
+      "pyridoxine_mg": 0,
+      "biotin_ug": 0,
+      "folic_acid_ug": 0,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0,
+      "histidine_g": 0,
+      "isoleucine_g": 0,
+      "leucine_g": 0,
+      "lysine_g": 0,
+      "methionine_cystine_g": 0,
+      "phenylalanine_tyrosine_g": 0,
+      "threonine_g": 0,
+      "tryptophan_g": 0,
+      "valine_g": 0,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 15,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "none",
+      "zinc_absorption_factor": "none",
+      "calcium_absorption_factor": "none",
+      "anti_nutrient_interactions": "Os MCTs não exigem lipase pancreática nem sais biliares para absorção. São absorvidos diretamente na veia porta. Isso os torna a fonte de gordura IDEAL para cães com IPE ou problemas hepáticos/biliares."
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Rico em Triglicerídeos de Cadeia Média (MCTs). Absorvidos diretamente na veia porta, não exigem lipase pancreática nem sais biliares. Fonte de gordura ideal para cães com Insuficiência Pancreática Exócrina (IPE)."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Esteatorreia (se introduzido bruscamente)",
+        "mitigation": "Iniciar com 1/4 de colher de chá e aumentar gradualmente ao longo de 2 semanas."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Derrete acima de 24°C. Pode ser misturado na ração ou usado para encapsular medicamentos."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"None\"]",
+      "specific_strengths": "[\"High concentration of MCTs (Medium Chain Triglycerides: Caprylic C8, Capric C10, Lauric C12)\"]"
+    },
+    "price_per_kg": {
+      "value": 60,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "USDA FoodData Central / Veterinary Physiology Studies on MCT absorption",
+          "evidence_tier": "TIER_A"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  },
+  {
+    "id": "spinach_boiled",
+    "name": "Espinafre cozido",
+    "category": "vegetable_fiber",
+    "kcal_per_100g": 25,
+    "per_100g_as_fed": {
+      "protein_g": 3,
+      "fat_g": 0.4,
+      "moisture_g": 90,
+      "calcium_mg": 130,
+      "phosphorus_mg": 45,
+      "zinc_mg": 0.5,
+      "iron_mg": 3.5,
+      "sodium_mg": 70,
+      "potassium_mg": 300,
+      "magnesium_mg": 80,
+      "oxalate_mg": 400,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.5,
+      "selenium_ug": 1,
+      "iodine_ug": 10,
+      "chromium_ug": 2,
+      "vitamin_k_ug": 400,
+      "pantothenic_acid_mg": 0.3,
+      "pyridoxine_mg": 0.1,
+      "biotin_ug": 5,
+      "folic_acid_ug": 100,
+      "vitamin_c_mg": 5,
+      "arginine_g": 0.2,
+      "histidine_g": 0.1,
+      "isoleucine_g": 0.2,
+      "leucine_g": 0.3,
+      "lysine_g": 0.2,
+      "methionine_cystine_g": 0.1,
+      "phenylalanine_tyrosine_g": 0.2,
+      "threonine_g": 0.2,
+      "tryptophan_g": 0.05,
+      "valine_g": 0.2,
+      "omega_3_epa_g": 0,
+      "omega_3_dha_g": 0,
+      "omega_3_ala_g": 0.05
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 2,
+      "min_inclusion_pct": 0
+    },
+    "molar_mass_g_per_mol": {
+      "calcium": 40.078,
+      "iron": 55.845
+    },
+    "bioavailability_factors": {
+      "calcium_absorption": 0.05,
+      "iron_absorption": 0.05,
+      "oxalate_penalty": true
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "non-heme",
+      "zinc_absorption_factor": "Very Low (Oxalates)",
+      "calcium_absorption_factor": "Very Low (Oxalates)",
+      "anti_nutrient_interactions": "O espinafre é uma das fontes mais ricas em oxalatos. O oxalato se liga ao cálcio e ferro, tornando-os indisponíveis e aumentando o risco de cálculos renais de oxalato de cálcio em cães predispostos. O branqueamento (ferver e descartar a água) reduz os oxalatos solúveis em ~40%."
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Rico em oxalatos. Liga-se ao cálcio no trato gastrointestinal, aumentando o risco de urolitíase por oxalato de cálcio. Inclusão deve ser estritamente limitada (<2% da dieta) ou evitada em cães com histórico de pedras nos rins. Branqueamento (ferver e descartar água) reduz oxalatos solúveis."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical",
+        "risk": "Urolitíase por Oxalato de Cálcio",
+        "mitigation": "Limitar a <2% da dieta total. Cães com histórico de pedras nos rins ou insuficiência renal NÃO devem consumir espinafre."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Ferver em bastante água por 3-5 minutos e DESCARTAR a água. Isso lixivia os oxalatos solúveis. A prensagem remove o excesso de umidade."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"All\"]",
+      "specific_strengths": "[\"High Iron, Magnesium, and Folate\"]"
+    },
+    "price_per_kg": {
+      "value": 25,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "TBCA-USP / Canine Urolithiasis Risk Factors",
+          "evidence_tier": "TIER_A"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  },
+  {
+    "id": "cod_liver_oil",
+    "name": "Óleo de fígado de bacalhau",
+    "category": "supplement",
+    "kcal_per_100g": 900,
+    "per_100g_as_fed": {
+      "protein_g": 0,
+      "fat_g": 100,
+      "moisture_g": 0,
+      "calcium_mg": 0,
+      "phosphorus_mg": 0,
+      "zinc_mg": 0,
+      "iron_mg": 0,
+      "sodium_mg": 0,
+      "potassium_mg": 0,
+      "magnesium_mg": 0,
+      "vitamin_a_iu": 10000,
+      "vitamin_d_iu": 10000,
+      "omega_3_epa_g": 9,
+      "omega_3_dha_g": 12,
+      "copper_mg": 0,
+      "manganese_mg": 0,
+      "selenium_ug": 0,
+      "iodine_ug": 0,
+      "chromium_ug": 0,
+      "vitamin_k_ug": 0,
+      "pantothenic_acid_mg": 0,
+      "pyridoxine_mg": 0,
+      "biotin_ug": 0,
+      "folic_acid_ug": 0,
+      "vitamin_c_mg": 0,
+      "arginine_g": 0,
+      "histidine_g": 0,
+      "isoleucine_g": 0,
+      "leucine_g": 0,
+      "lysine_g": 0,
+      "methionine_cystine_g": 0,
+      "phenylalanine_tyrosine_g": 0,
+      "threonine_g": 0,
+      "tryptophan_g": 0,
+      "valine_g": 0,
+      "omega_3_ala_g": 0
+    },
+    "lp_constraints": {
+      "max_inclusion_pct": 3,
+      "min_inclusion_pct": 0
+    },
+    "bioavailability_and_absorption": {
+      "iron_type": "none",
+      "zinc_absorption_factor": "none",
+      "calcium_absorption_factor": "none",
+      "anti_nutrient_interactions": "A Vitamina D3 aumenta drasticamente a absorção intestinal de Cálcio e Fósforo. A Vitamina A em excesso compete com a Vitamina D por receptores celulares."
+    },
+    "palatability_and_feasibility": {
+      "score": 5,
+      "critical_analysis": "Suplemento definitivo para EPA/DHA (anti-inflamatório articular para Displasia/OA) e Vitamina D. Risco de toxicidade por Vitamina A (hipervitaminose A) se exceder doses seguras. Não exceder 1 colher de chá/dia para GSD de 35kg."
+    },
+    "safety_alerts": [
+      {
+        "type": "chemical_toxicity",
+        "risk": "Hipervitaminose A e D",
+        "mitigation": "A dose máxima segura é limitada pela Vitamina A. Para um GSD de 35kg, não exceder 1 colher de chá (5ml) por dia, fornecendo ~5000 UI de Vit A. O excesso causa deformidades ósseas em filhotes e calcificação de tecidos moles em adultos."
+      }
+    ],
+    "processing_notes": [
+      {
+        "note": "Armazenar em geladeira após aberto. A oxidação (ranço) é rápida devido à alta poliinsaturação. Se o cheiro mudar de peixe forte para tinta de caneta/ranço, descartar imediatamente."
+      }
+    ],
+    "amino_acid_profile_notes": {
+      "limiting_amino_acids": "[\"None\"]",
+      "specific_strengths": "[\"Highest natural source of EPA/DHA, Vitamina A e D3\"]"
+    },
+    "price_per_kg": {
+      "value": 60,
+      "currency": "BRL",
+      "updated_at": "2026-07-08"
+    },
+    "metadata": {
+      "source": [
+        {
+          "citation": "USDA FoodData Central / ACVIM Osteoarthritis Guidelines",
+          "evidence_tier": "TIER_A"
+        }
+      ]
+    },
+    "_source_file": "COmplementar de estrategia v2.md"
+  }
+]
