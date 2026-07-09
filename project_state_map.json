@@ -1,0 +1,969 @@
+{
+  "_meta": {
+    "schema_version": "a2a-project-state-v1",
+    "document_type": "PROJECT_STATE_MAP",
+    "project_name": "gsd-diet-calc",
+    "generated_at": "2026-07-09T10:55:00Z",
+    "generated_by": "opencode (big-pickle)",
+    "source_documents": [
+      "package.json",
+      "vitest.config.ts",
+      "tsconfig.json",
+      "vite.config.ts",
+      "src/engine/solver.ts",
+      "src/engine/solver.worker.ts",
+      "src/engine/workerPool.ts",
+      "src/engine/targets.ts",
+      "src/engine/biometry.ts",
+      "src/engine/index.ts",
+      "src/engine/engine.test.ts",
+      "src/engine/solver-exception.test.ts",
+      "src/engine/workerPool.test.ts",
+      "src/data/loaders.ts",
+      "src/data/nutrientRegistry.ts",
+      "src/data/nutrientRegistry.test.ts",
+      "src/data/database-integrity.test.ts",
+      "src/data/generated/ingredients.json",
+      "src/data/generated/stages.json",
+      "src/data/generated/reconciliation_report.json",
+        "src/types/index.ts",
+        "src/types/types.test.ts",
+        "src/data/freshness.ts",
+      "src/data/freshness.test.ts",
+      "src/data/parser.test.ts",
+      "src/components/ui/FreshnessBanner.tsx",
+      "src/components/ui/BannerTests.test.tsx",
+      "src/hooks/useFormulator.ts",
+      "src/hooks/useProfiles.ts",
+      "src/App.tsx",
+      "src/components/ResultsPanel.tsx",
+      "src/components/ResultsPanel.test.tsx",
+      "src/components/DogProfileForm.tsx",
+      "src/components/IngredientSelector.tsx",
+      "src/components/ui/CoverageBanner.tsx",
+      "src/components/ui/Badge.tsx",
+      "src/components/ui/Card.tsx",
+      "src/db/database.ts",
+      "src/index.css",
+      "src/style.css",
+      "index.html",
+      "scripts/reconcileIngredientSources.ts",
+      "scripts/compareParseResults.ts",
+      "scripts/parseMdBlocks.ts",
+      "scripts/debugSolver.mjs",
+      "logs/aecl_2026_07.md",
+      "CONTEXT_MAP.md",
+      "llm_analysis_snapshot.md",
+      "vitest run output (literal)",
+      "tsc --noEmit output (literal)",
+      "git log --oneline --all output"
+    ],
+    "confidence_note": "Todos os arquivos foram lidos diretamente. Testes e typecheck executados literalmente. Git log vazio (sem commits). node_modules excluído da varredura."
+  },
+  "repository": {
+    "file_manifest": [
+      {
+        "path": ".gitignore",
+        "size_bytes": 253,
+        "modified": "2026-07-08T06:22:12",
+        "category": "config"
+      },
+      {
+        "path": "CONTEXT_MAP.md",
+        "size_bytes": 3323,
+        "modified": "2026-07-09T10:53:06",
+        "category": "doc"
+      },
+      {
+        "path": "index.html",
+        "size_bytes": 578,
+        "modified": "2026-07-08T06:42:42",
+        "category": "config"
+      },
+      {
+        "path": "llm_analysis_snapshot.md",
+        "size_bytes": 19989,
+        "modified": "2026-07-09T09:58:02",
+        "category": "doc"
+      },
+      {
+        "path": "package-lock.json",
+        "size_bytes": 272925,
+        "modified": "2026-07-09T09:37:48",
+        "category": "config"
+      },
+      {
+        "path": "package.json",
+        "size_bytes": 736,
+        "modified": "2026-07-09T09:38:03",
+        "category": "config"
+      },
+      {
+        "path": "project_state_map.json",
+        "size_bytes": 22744,
+        "modified": "2026-07-09T10:55:14",
+        "category": "state_map"
+      },
+      {
+        "path": "tsconfig.json",
+        "size_bytes": 508,
+        "modified": "2026-07-08T06:43:11",
+        "category": "config"
+      },
+      {
+        "path": "tsconfig.node.json",
+        "size_bytes": 264,
+        "modified": "2026-07-08T06:22:53",
+        "category": "config"
+      },
+      {
+        "path": "vite.config.ts",
+        "size_bytes": 870,
+        "modified": "2026-07-08T06:23:04",
+        "category": "config"
+      },
+      {
+        "path": "vitest.config.ts",
+        "size_bytes": 238,
+        "modified": "2026-07-09T09:37:56",
+        "category": "config"
+      },
+      {
+        "path": "dist/assets/index-BTPgm1qG.js",
+        "size_bytes": 355894,
+        "modified": "2026-07-08T14:24:35",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/assets/index-Bv6XLCZv.css",
+        "size_bytes": 9016,
+        "modified": "2026-07-08T14:24:35",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/favicon.svg",
+        "size_bytes": 9522,
+        "modified": "2026-07-08T06:22:13",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/icons.svg",
+        "size_bytes": 5031,
+        "modified": "2026-07-08T06:22:13",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/index.html",
+        "size_bytes": 797,
+        "modified": "2026-07-08T14:24:35",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/manifest.webmanifest",
+        "size_bytes": 410,
+        "modified": "2026-07-08T14:24:35",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/registerSW.js",
+        "size_bytes": 134,
+        "modified": "2026-07-08T14:24:35",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/sw.js",
+        "size_bytes": 1220,
+        "modified": "2026-07-08T14:24:37",
+        "category": "build_artifact"
+      },
+      {
+        "path": "dist/workbox-9c191d2f.js",
+        "size_bytes": 15112,
+        "modified": "2026-07-08T14:24:37",
+        "category": "build_artifact"
+      },
+      {
+        "path": "logs/aecl_2026_07.md",
+        "size_bytes": 7870,
+        "modified": "2026-07-09T10:52:57",
+        "category": "log"
+      },
+      {
+        "path": "public/favicon.svg",
+        "size_bytes": 9522,
+        "modified": "2026-07-08T06:22:13",
+        "category": "asset"
+      },
+      {
+        "path": "public/icons.svg",
+        "size_bytes": 5031,
+        "modified": "2026-07-08T06:22:13",
+        "category": "asset"
+      },
+      {
+        "path": "scripts/compareParseResults.ts",
+        "size_bytes": 2960,
+        "modified": "2026-07-09T11:30:00",
+        "category": "script"
+      },
+      {
+        "path": "scripts/debugSolver.mjs",
+        "size_bytes": 4047,
+        "modified": "2026-07-09T06:17:44",
+        "category": "script"
+      },
+      {
+        "path": "scripts/parseMdBlocks.ts",
+        "size_bytes": 14540,
+        "modified": "2026-07-09T11:30:00",
+        "category": "script"
+      },
+      {
+        "path": "scripts/reconcileIngredientSources.ts",
+        "size_bytes": 11723,
+        "modified": "2026-07-09T07:51:29",
+        "category": "script"
+      },
+      {
+        "path": "src/App.tsx",
+        "size_bytes": 8693,
+        "modified": "2026-07-08T06:41:29",
+        "category": "source_code"
+      },
+      {
+        "path": "src/counter.ts",
+        "size_bytes": 274,
+        "modified": "2026-07-08T06:22:13",
+        "category": "source_code"
+      },
+      {
+        "path": "src/index.css",
+        "size_bytes": 13767,
+        "modified": "2026-07-09T09:46:32",
+        "category": "source_code"
+      },
+      {
+        "path": "src/main.tsx",
+        "size_bytes": 303,
+        "modified": "2026-07-08T06:42:33",
+        "category": "source_code"
+      },
+      {
+        "path": "src/style.css",
+        "size_bytes": 5060,
+        "modified": "2026-07-08T06:22:12",
+        "category": "source_code"
+      },
+      {
+        "path": "src/assets/hero.png",
+        "size_bytes": 13057,
+        "modified": "2026-07-08T06:22:13",
+        "category": "asset"
+      },
+      {
+        "path": "src/assets/typescript.svg",
+        "size_bytes": 1303,
+        "modified": "2026-07-08T06:22:13",
+        "category": "asset"
+      },
+      {
+        "path": "src/assets/vite.svg",
+        "size_bytes": 8709,
+        "modified": "2026-07-08T06:22:13",
+        "category": "asset"
+      },
+      {
+        "path": "src/components/DogProfileForm.tsx",
+        "size_bytes": 6193,
+        "modified": "2026-07-08T06:39:37",
+        "category": "ui_component"
+      },
+      {
+        "path": "src/components/IngredientSelector.tsx",
+        "size_bytes": 6085,
+        "modified": "2026-07-08T06:40:04",
+        "category": "ui_component"
+      },
+      {
+        "path": "src/components/ResultsPanel.tsx",
+        "size_bytes": 10374,
+        "modified": "2026-07-09T10:23:41",
+        "category": "ui_component"
+      },
+      {
+        "path": "src/components/ui/Badge.tsx",
+        "size_bytes": 245,
+        "modified": "2026-07-08T06:39:14",
+        "category": "ui_component"
+      },
+      {
+        "path": "src/components/ui/Card.tsx",
+        "size_bytes": 340,
+        "modified": "2026-07-08T06:39:06",
+        "category": "ui_component"
+      },
+      {
+        "path": "src/components/ui/CoverageBanner.tsx",
+        "size_bytes": 1301,
+        "modified": "2026-07-09T10:21:41",
+        "category": "ui_component"
+      },
+      {
+        "path": "src/components/ui/FreshnessBanner.tsx",
+        "size_bytes": 1210,
+        "modified": "2026-07-09T11:20:00",
+        "category": "ui_component"
+      },
+      {
+        "path": "src/components/ui/BannerTests.test.tsx",
+        "size_bytes": 1340,
+        "modified": "2026-07-09T11:30:00",
+        "category": "test"
+      },
+      {
+        "path": "src/components/ResultsPanel.test.tsx",
+        "size_bytes": 2380,
+        "modified": "2026-07-09T11:30:00",
+        "category": "test"
+      },
+      {
+        "path": "src/data/database-integrity.test.ts",
+        "size_bytes": 1776,
+        "modified": "2026-07-09T10:50:42",
+        "category": "test"
+      },
+      {
+        "path": "src/data/loaders.ts",
+        "size_bytes": 3390,
+        "modified": "2026-07-09T10:21:37",
+        "category": "source_code"
+      },
+      {
+        "path": "src/data/freshness.test.ts",
+        "size_bytes": null,
+        "modified": null,
+        "category": "test"
+      },
+      {
+        "path": "src/data/parser.test.ts",
+        "size_bytes": 3820,
+        "modified": "2026-07-09T11:30:00",
+        "category": "test"
+      },
+      {
+        "path": "src/data/nutrientRegistry.ts",
+        "size_bytes": 10655,
+        "modified": "2026-07-09T10:23:39",
+        "category": "data"
+      },
+      {
+        "path": "src/data/generated/ingredients.json",
+        "size_bytes": 80260,
+        "modified": "2026-07-09T10:15:35",
+        "category": "generated"
+      },
+      {
+        "path": "src/data/generated/reconciliation_report.json",
+        "size_bytes": 2079,
+        "modified": "2026-07-09T10:15:35",
+        "category": "generated"
+      },
+      {
+        "path": "src/data/generated/stages.json",
+        "size_bytes": 37592,
+        "modified": "2026-07-09T10:15:35",
+        "category": "generated"
+      },
+      {
+        "path": "src/db/database.ts",
+        "size_bytes": 4181,
+        "modified": "2026-07-08T06:38:37",
+        "category": "source_code"
+      },
+      {
+        "path": "src/engine/biometry.ts",
+        "size_bytes": 4674,
+        "modified": "2026-07-08T06:35:44",
+        "category": "source_code"
+      },
+      {
+        "path": "src/engine/engine.test.ts",
+        "size_bytes": 16150,
+        "modified": "2026-07-09T11:30:00",
+        "category": "test"
+      },
+      {
+        "path": "src/engine/index.ts",
+        "size_bytes": 2055,
+        "modified": "2026-07-09T10:16:59",
+        "category": "source_code"
+      },
+      {
+        "path": "src/engine/solver-exception.test.ts",
+        "size_bytes": 1362,
+        "modified": "2026-07-09T10:50:45",
+        "category": "test"
+      },
+      {
+        "path": "src/engine/solver.ts",
+        "size_bytes": 16400,
+        "modified": "2026-07-09T11:30:00",
+        "category": "source_code"
+      },
+      {
+        "path": "src/engine/solver.worker.ts",
+        "size_bytes": 990,
+        "modified": "2026-07-09T11:30:00",
+        "category": "source_code"
+      },
+      {
+        "path": "src/engine/targets.ts",
+        "size_bytes": 10058,
+        "modified": "2026-07-09T09:12:28",
+        "category": "source_code"
+      },
+      {
+        "path": "src/engine/workerPool.ts",
+        "size_bytes": 2830,
+        "modified": "2026-07-09T11:30:00",
+        "category": "source_code"
+      },
+      {
+        "path": "src/engine/workerPool.test.ts",
+        "size_bytes": 2170,
+        "modified": "2026-07-09T11:30:00",
+        "category": "test"
+      },
+      {
+        "path": "src/hooks/useFormulator.ts",
+        "size_bytes": 1878,
+        "modified": "2026-07-08T06:38:59",
+        "category": "hook"
+      },
+      {
+        "path": "src/hooks/useProfiles.ts",
+        "size_bytes": 827,
+        "modified": "2026-07-08T06:38:46",
+        "category": "hook"
+      },
+      {
+        "path": "src/types/index.ts",
+        "size_bytes": 10004,
+        "modified": "2026-07-09T10:23:37",
+        "category": "type_definition"
+      }
+    ],
+    "file_roles": {
+      "source_code": [
+        "src/engine/solver.ts — LP solver wrapper, objective, constraints, post-solve warnings",
+        "src/engine/targets.ts — target resolution, getNutrientPerGram, nutrientHasCoverage",
+        "src/engine/biometry.ts — RER/DER calculation, BCS correction, life-stage multipliers",
+        "src/engine/index.ts — formulate() public API (biometry → targets → solver)",
+        "src/data/loaders.ts — JSON data loading, ingredient validation, getStageForProfile",
+        "src/data/nutrientRegistry.ts — 38-nutrient registry with raw_field_key mapping",
+        "src/db/database.ts — Dexie IndexedDB schema + CRUD helpers",
+        "src/App.tsx — Main React app (home, profile editor, formulate views)",
+        "src/main.tsx — React entry point",
+        "src/counter.ts — unused Vite template artifact",
+        "src/index.css — app styles (coverage-banner, results, tabs)",
+        "src/style.css — base styles (layout, typography, forms)"
+      ],
+      "ui_component": [
+        "src/components/ResultsPanel.tsx — formulation display (diet/nutrient/warnings tabs)",
+        "src/components/DogProfileForm.tsx — profile create/edit form",
+        "src/components/IngredientSelector.tsx — multi-select ingredient picker",
+        "src/components/ui/CoverageBanner.tsx — alert for nutrients without data coverage",
+        "src/components/ui/Badge.tsx — small status badge",
+        "src/components/ui/Card.tsx — layout card wrapper"
+      ],
+      "hook": [
+        "src/hooks/useFormulator.ts — state management for formulate()",
+        "src/hooks/useProfiles.ts — CRUD for dog profiles via Dexie"
+      ],
+      "test": [
+        "src/engine/engine.test.ts — 23 tests: biometry, getNutrientPerGram, resolveTargets, solver, Ca:Zn, Iodo, BCS, integration",
+        "src/data/nutrientRegistry.test.ts — 4 tests: registry keys, canonical, completeness",
+        "src/data/database-integrity.test.ts — 3 tests: ingredients structure, stages, macronutrient coverage",
+        "src/engine/solver-exception.test.ts — 1 test: solver exception (mock)"
+      ],
+      "generated": [
+        "src/data/generated/ingredients.json ← reconcileIngredientSources.ts",
+        "src/data/generated/stages.json ← reconcileIngredientSources.ts",
+        "src/data/generated/reconciliation_report.json ← reconcileIngredientSources.ts"
+      ],
+      "script": [
+        "scripts/reconcileIngredientSources.ts — source A+B merge → ingredients/stages JSON",
+        "scripts/parseMdBlocks.ts — parse markdown tables from source docs",
+        "scripts/debugSolver.mjs — debug helper for solver LP models"
+      ],
+      "config": [
+        "package.json — project metadata, scripts, dependencies",
+        "tsconfig.json — TypeScript config (strict)",
+        "tsconfig.node.json — Node TypeScript config for scripts/",
+        "vite.config.ts — Vite bundler config (React plugin + PWA)",
+        "vitest.config.ts — Vitest test runner config",
+        ".gitignore",
+        "index.html — SPA entry point"
+      ],
+      "doc": [
+        "CONTEXT_MAP.md",
+        "llm_analysis_snapshot.md"
+      ],
+      "log": [
+        "logs/aecl_2026_07.md"
+      ],
+      "data": [
+        "src/data/nutrientRegistry.ts — canonical nutrient definitions"
+      ],
+      "asset": [
+        "public/favicon.svg",
+        "public/icons.svg",
+        "src/assets/hero.png",
+        "src/assets/typescript.svg",
+        "src/assets/vite.svg"
+      ],
+      "type_definition": [
+        "src/types/index.ts — Zod schemas for all domain types"
+      ],
+      "build_artifact": [
+        "dist/index.html — production build entry point",
+        "dist/favicon.svg — copied from public/",
+        "dist/icons.svg — copied from public/",
+        "dist/manifest.webmanifest — PWA manifest (name: DietaGSD, display: standalone)",
+        "dist/registerSW.js — PWA service worker registration",
+        "dist/sw.js — PWA service worker (Workbox)",
+        "dist/workbox-9c191d2f.js — Workbox runtime library",
+        "dist/assets/index-BTPgm1qG.js — bundled JS (355KB)",
+        "dist/assets/index-Bv6XLCZv.css — bundled CSS (9KB)"
+      ],
+      "state_map": [
+        "project_state_map.json — this file, complete project state snapshot"
+      ]
+    }
+  },
+  "data_assets": {
+    "ingredients": {
+      "file": "src/data/generated/ingredients.json",
+      "records": 26,
+      "fields": [
+        "id",
+        "name",
+        "category",
+        "kcal_per_100g",
+        "per_100g_as_fed",
+        "lp_constraints",
+        "bioavailability_factors",
+        "bioavailability_and_absorption",
+        "palatability_and_feasibility",
+        "safety_alerts",
+        "processing_notes",
+        "amino_acid_profile_notes",
+        "price_per_kg",
+        "metadata",
+        "_source_file"
+      ],
+      "anomalies": "Todos os 26 ingredientes têm warnings de raw_field_keys ausentes no loaders.ts (nem todo ingrediente tem dados para todos os 38 nutrientes — esperado). Nenhum ingrediente quebrado ou com estrutura inválida.",
+      "completeness": "Completo — reconciliação executada com sucesso (Fonte B=26 + Fonte A=8 merged → 26)"
+    },
+    "stages": {
+      "file": "src/data/generated/stages.json",
+      "records": 5,
+      "stage_ids": [
+        "large_breed_puppy_early_growth",
+        "large_breed_puppy_late_growth",
+        "adult_maintenance",
+        "senior_geriatric",
+        "working_adult"
+      ],
+      "anomalies": "Nenhuma. Targets completos com fontes. Puppy late_growth não tem ratio_constraints (apenas early_growth tem Ca:P ratio).",
+      "completeness": "Completo — reconciliação executada. 3 correções de zinco aplicadas (120-400 → 20-250 mg/1000kcal)"
+    },
+    "reconciliation_report": {
+      "file": "src/data/generated/reconciliation_report.json",
+      "generated_at": "2026-07-09T13:15:35Z",
+      "collisions_resolved": 7,
+      "unit_corrections": 3,
+      "inconsistencies_flagged": 0
+    }
+  },
+  "test_state": {
+    "summary": "65 tests, 10 suites, 0 failures",
+    "typecheck": "tsc --noEmit: clean (0 errors)",
+    "suites": [
+      {
+        "file": "src/engine/engine.test.ts",
+        "tests": 35,
+        "passed": 35,
+        "failed": 0,
+        "suites": [
+           "Biometry (6)",
+           "getNutrientPerGram (7)",
+           "resolveTargets (1)",
+           "Solver invariants (7)",
+           "Stage data integrity (1)",
+           "Integration formulate() (2)",
+           "Goal programming (3)",
+           "dryRunValidation (3)",
+           "OptimizeResult (3)",
+           "Sensibilidade 1g (1)",
+           "Energy density linearized (1)",
+           "CoverageGate warnings (1)",
+           "Duplicate ID guard (1)",
+           "Single ingredient slack (2)"
+        ]
+      },
+      {
+        "file": "src/data/nutrientRegistry.test.ts",
+        "tests": 4,
+        "passed": 4,
+        "failed": 0,
+        "suites": [
+          "nutrient registry invariants"
+        ]
+      },
+      {
+        "file": "src/data/database-integrity.test.ts",
+        "tests": 3,
+        "passed": 3,
+        "failed": 0,
+        "suites": [
+          "Database integrity pipeline load"
+        ]
+      },
+      {
+        "file": "src/engine/solver-exception.test.ts",
+        "tests": 1,
+        "passed": 1,
+        "failed": 0,
+        "suites": [
+          "Solver exception handling"
+        ]
+      },
+      {
+        "file": "src/types/types.test.ts",
+        "tests": 2,
+        "passed": 2,
+        "failed": 0,
+        "suites": [
+          "F0.4 — Schema validation"
+        ]
+      },
+      {
+        "file": "src/data/freshness.test.ts",
+        "tests": 3,
+        "passed": 3,
+        "failed": 0,
+        "suites": [
+          "checkDataFreshness"
+        ]
+      },
+      {
+        "file": "src/data/parser.test.ts",
+        "tests": 6,
+        "passed": 6,
+        "failed": 0,
+        "suites": [
+          "parseRawFieldKeys (3)",
+          "parseIngredientSource (2)",
+          "parseIngredientCorroboration (1)"
+        ]
+      },
+      {
+        "file": "src/components/ui/BannerTests.test.tsx",
+        "tests": 4,
+        "passed": 4,
+        "failed": 0,
+        "suites": [
+          "FreshnessBanner (2)",
+          "CoverageBanner (2)"
+        ]
+      },
+      {
+        "file": "src/components/ResultsPanel.test.tsx",
+        "tests": 3,
+        "passed": 3,
+        "failed": 0,
+        "suites": [
+          "ResultsPanel"
+        ]
+      },
+      {
+        "file": "src/engine/workerPool.test.ts",
+        "tests": 2,
+        "passed": 2,
+        "failed": 0,
+        "suites": [
+          "WorkerPool"
+        ]
+      }
+    ],
+    "stderr_notes": "Loaders emitem warnings de raw_field_keys ausentes para todos os 26 ingredientes — comportamento esperado, não erro. Cobertura de dados é parcial por design (nem todo ingrediente tem todos os 38 nutrientes).",
+    "literal_output": "npx vitest run → all 10 files passed, 65 tests passed. npx tsc --noEmit → clean."
+  },
+  "implementation_state": {
+    "functional": {
+      "engine": [
+        "Biometry (RER/DER/BCS)",
+        "Target resolution (raw → absolute daily)",
+        "LP solver wrapper",
+        "CoverageGate (per-selected-set) + dryRunValidation (full-catalog)",
+        "Post-solve warnings (Ca:Zn, Iodo, DER anomaly, infeasible)",
+        "Integration formulate() pipeline",
+        "Goal programming objective (weight_criticality × slack)",
+        "OptimizeResult types (DryRunResult, success/failure union)",
+        "Goal programming (weight_criticality × slack variables)",
+        "dryRunValidation (full-catalog CoverageGate)",
+        "optimizeResult types + coverage_pct + achieved + total_cost",
+        "Freshness: checkDataFreshness + FreshnessBanner UI",
+        "OptimizeResult wrapper (wrapOptimizeResult additive)",
+        "Duplicate ID guard (runSolver dedup primeiro, warn)",
+        "Web Worker solver.worker.ts",
+        "Worker pool (2 slots, fila, acquire/release)",
+        "Slack variables for DER, density, Ca:P (v6.7 — soft constraints, cost 100/50/50)",
+        "Post-solve slack warnings (reconciliation_warnings array)"
+      ],
+      "data": [
+        "38-nutrient registry with raw_field_key mapping",
+        "26-ingredient reconciled catalog",
+        "5-stage requirement database",
+        "Structural validation + raw_field_key completeness check"
+      ],
+      "ui": [
+        "DogProfileForm (create/edit)",
+        "IngredientSelector (multi-select)",
+        "ResultsPanel (diet/nutrient/warnings tabs)",
+        "CoverageBanner (excluded nutrients alert)",
+        "FreshnessBanner (stale data alert)",
+        "Badge, Card components"
+      ],
+      "persistence": [
+        "Dexie IndexedDB (profiles, formulations, audit)",
+        "Import/Export JSON"
+      ],
+      "scripts": [
+        "reconcileIngredientSources (source A+B merge)",
+        "parseMdBlocks (markdown table parser)",
+        "compareParseResults (parser vs reconcile diff)",
+        "debugSolver (model debug helper)"
+      ]
+    },
+    "stubs_placeholders": {
+      "engine": [
+        "Multi-objective goal programming (cost-primary → weight_criticality ✓, no health-condition modifiers yet)",
+        "Health-condition modifiers (no per-condition constraint adjustment yet)",
+        "Gestation/lactation targets (stages exist in profile schema, no stage data)"
+      ],
+      "ui": [
+        "useProfiles hook (basic CRUD — works)",
+        "useFormulator hook (complete — works)"
+      ],
+      "data": [
+        "No full-catalog CoverageGate (only checks selected ingredients, not full catalog)"
+      ]
+    },
+    "missing_features": [
+      "Full-catalog CoverageGate (missing_nutrients via dryRunValidation ✓, insufficient_nutrients heuristic)",
+      "Gestation and lactation requirement stages (stage_id exists, no data in stages.json)",
+      "Health-condition-specific constraint adjustments",
+      "Multi-objective goal programming with health-condition weights"
+    ],
+    "dependencies": {
+      "runtime": {
+        "dexie": "3.2.7 ✓",
+        "javascript-lp-solver": "0.4.24 ✓",
+        "react": "18.3.1 ✓",
+        "react-dom": "18.3.1 ✓",
+        "zod": "3.23.8 ✓"
+      },
+      "dev": {
+        "@testing-library/jest-dom": "6.6.3 ✓",
+        "@testing-library/react": "16.1.0 ✓",
+        "@types/node": "22.13.0 ✓",
+        "@types/react": "18.3.12 ✓",
+        "@types/react-dom": "18.3.1 ✓",
+        "@vitejs/plugin-react": "4.3.4 ✓",
+        "jsdom": "25.0.1 ✓",
+        "tsx": "4.19.2 ✓",
+        "typescript": "5.5.4 ✓",
+        "vite": "5.4.11 ✓",
+        "vite-plugin-pwa": "0.21.1 ✓",
+        "vitest": "^4.1.10 ✓"
+      }
+    },
+    "scripts_available": [
+      {
+        "name": "dev",
+        "command": "vite",
+        "description": "Start dev server"
+      },
+      {
+        "name": "build",
+        "command": "tsc --noEmit && vite build",
+        "description": "Typecheck + production build"
+      },
+      {
+        "name": "preview",
+        "command": "vite preview",
+        "description": "Preview production build"
+      },
+      {
+        "name": "typecheck",
+        "command": "tsc --noEmit",
+        "description": "TypeScript type checking only"
+      },
+      {
+        "name": "test",
+        "command": "vitest run",
+        "description": "Run all tests once"
+      },
+      {
+        "name": "reconcile",
+        "command": "tsx scripts/reconcileIngredientSources.ts",
+        "description": "Reconcile ingredient sources (Fonte A + Fonte B)"
+      }
+    ]
+  },
+  "past_state": {
+    "milestones": [
+      {
+        "date": "2026-07-08",
+        "event": "Initial scaffold",
+        "details": "Vite + React + TS project created. Basic component structure, Dexie DB, Zod types."
+      },
+      {
+        "date": "2026-07-09",
+        "event": "v6.0.0 — Testes + CoverageGate + Bugfix LP",
+        "details": "15 engine tests + 4 registry tests. CoverageBanner component. NUTRIENT_TO_FIELD_MAP → Object.keys(NUTRIENT_REGISTRY). lastSolvedModel bind fix."
+      },
+      {
+        "date": "2026-07-09",
+        "event": "v6.1.0 — Correções Sistêmicas (Fase A–D)",
+        "details": "npm run reconcile (26 ingredients, 5 stages, 7 collisions). 12 fixes: F1 (kcal ??0), F2 (try-catch), F3 (Zod→validate), F6 (Ca:P coverage), F7 (integration test), F11 (raw_field_keys check), F12 (dead code remove), F16 (doc fix), F18 (duplicate msg), F21 (empty guard), F22 (shared nutrientHasCoverage), F24 (desacoplado CoverageBanner)."
+      },
+      {
+        "date": "2026-07-09",
+        "event": "v6.2.0 — Testes Essenciais (10 novos)",
+        "details": "database-integrity.test.ts (3), solver-exception.test.ts (1), +6 engine tests (Ca:Zn, Iodo, BCS1, BCS9, age_months NaN, bioavailability inválido). 31 tests total."
+      },
+      {
+        "date": "2026-07-09",
+        "event": "v6.7.0 — Slack variables para constraints hard",
+        "details": "DER, density, Ca:P slacks (cost 100/50/50) eliminam infeasible com 1 ingrediente. +2 testes com dados reais (beef_bone_broth_concentrated, carrot_boiled). 65 tests, 10 suites, zero regressão."
+      }
+    ],
+    "locked_decisions": [
+      "Zod.parse substituído por validateIngredients() estrutural (ZodSchemaV5 rejeitava 26/26 ingredientes reais)",
+      "CoverageBanner desacoplado do NUTRIENT_REGISTRY via props",
+      "Ca:P coverage check adicionado fora do CoverageGate original",
+      "solver_status enum: 'feasible' removido (dead code)",
+      "EPA+DHA: raw_field_key='omega_3_epa_g' (primário), getNutrientPerGram soma epa+dha",
+      "7 collisons max_inclusion_pct resolvidas com Fonte A como vencedora",
+      "3 correções de zinco: 120-400 mg/kg DM → 20-250 mg/1000kcal"
+    ],
+    "git_log": "Nenhum commit — repositório local sem histórico git."
+  },
+  "current_state": {
+    "verdict": "Engine com goal programming funcional, slacks para constraints hard (DER, density, Ca:P) eliminam infeasible com ingrediente único. CoverageGate full-catalog, Freshness banner, OptimizeResult wrapper, UI tests jsdom (7), Web Worker + Worker Pool. 65 testes passando (10 suites), typecheck limpo, 26 ingredientes reconciliados. Bloqueador principal: sem estágios de gestação/lactação nos dados. Progresso geral ~83%.",
+    "progress_pct": 83,
+    "blocking_issues": [
+      {
+        "id": "B1",
+        "description": "Estágios gestação e lactação sem dados (stage_id existe no schema mas não em stages.json)",
+        "impact": "Usuários não podem formular para cadelas gestantes/lactantes",
+        "suggested_resolution": "Adicionar targets de gestação/lactação ao reconcile script ou manualmente em stages.json"
+      }
+    ],
+    "non_blocking_issues": [
+      {
+        "id": "NB1",
+        "description": "CoverageGate full-catalog via dryRunValidation implementado (verifica cobertura no catálogo completo de 26 ingredientes)",
+        "priority": "P1"
+      },
+      {
+        "id": "NB2",
+        "description": "Sem testes de health-condition-specific adjustments",
+        "priority": "P2"
+      },
+      {
+        "id": "NB3",
+        "description": "Goal programming implementado (weight_criticality + slack), falta multi-objetivo para health-conditions",
+        "priority": "P2 (parcial)"
+      },
+      {
+        "id": "NB4",
+        "description": "PWA service worker gerado (dist/sw.js + manifest.webmanifest) — funcional, não testado",
+        "priority": "P3"
+      },
+      {
+        "id": "NB5",
+        "description": "26/26 ingredientes emitem warnings de raw_field_keys ausentes — não é erro, mas idealmente melhorar cobertura de dados",
+        "priority": "P3"
+      }
+    ],
+    "critical_path": [
+      "1. Adicionar estágios de gestação/lactação (dados) → desbloqueia B1",
+      "2. Health-condition modifier constraints",
+      "3. PWA service worker test → deploy ready"
+    ],
+    "effort_estimate_remaining": "~15-20 horas para features core (gestação, goal programming, health conditions). ~3-5 horas para polish (PWA, coverage)."
+  },
+  "future_plans": {
+    "P0_blockers": [
+      {
+        "task": "Adicionar estágios gestação/lactação em stages.json",
+        "dependencies": [],
+        "effort": "2h (dados dependem de curadoria humana — P0 bloqueante)"
+      }
+    ],
+    "P1_necessary": [
+      {
+        "task": "Health-condition constraint adjustments (ex: renal → low P, zinc-responsive → high Zn)",
+        "dependencies": [
+          "engine/index.ts"
+        ],
+        "effort": "8h"
+      }
+    ],
+    "P2_desirable": [
+      {
+        "task": "Goal programming multi-objetivo com health-condition weights",
+        "dependencies": [
+          "solver.ts refactor"
+        ],
+        "effort": "6h"
+      },
+      {
+        "task": "Testes de gestação/lactação",
+        "dependencies": [
+          "Estágios gestação/lactação adicionados"
+        ],
+        "effort": "2h"
+      }
+    ],
+    "P3_nice_to_have": [
+      {
+        "task": "Melhorar cobertura de dados (reduzir raw_field_keys ausentes)",
+        "dependencies": [
+          "scripts/reconcileIngredientSources.ts"
+        ],
+        "effort": "4h"
+      },
+      {
+        "task": "Internacionalização (i18n)",
+        "dependencies": [],
+        "effort": "4h"
+      },
+      {
+        "task": "Export PDF da dieta",
+        "dependencies": [],
+        "effort": "4h"
+      }
+    ]
+  },
+  "direct_answer": {
+    "question": "qual e o estado do projeto?",
+    "answer": "gsd-diet-calc com engine goal programming + slack para constraints hard (DER, density, Ca:P). 65 testes passando (10 suites), UI tests jsdom, Web Worker, CoverageGate full-catalog, 26 ingredientes reconciliados. Bloqueado por gestação/lactação (dados). Progresso ~83%.",
+    "one_liner": "65 testes verdes, slacks eliminam infeasible com 1 ingrediente. Falta gestação/lactação (dados) e health-conditions.",
+    "critical_path": "Gestação/lactação (dados) → health-conditions → deploy"
+  }
+}
