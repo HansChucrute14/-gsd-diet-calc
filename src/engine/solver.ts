@@ -201,6 +201,12 @@ export function runSolver(input: SolverInput): SolverOutput {
     variables[varName(ing.id)]['total'] = 1
   }
   constraints['total'] = { min: minTotal, max: maxTotal }
+  // Slack total grams — livre mode: ingredients with low max_inclusion_pct may
+  // not reach minTotal, so slack keeps the solver feasible.
+  if (mode === 'livre') {
+    variables['sl_total_under'] = { cost: 100, total: 1 }
+    variables['sl_total_over']  = { cost: 100, total: -1 }
+  }
 
   // ── DER calorie anchor (v6 §6.1) ──────────────────────────────────────────
   // Σ(kcal_per_g · x_i) ∈ [der×0.97, der×1.03]
@@ -500,6 +506,14 @@ export function runSolver(input: SolverInput): SolverOutput {
 
   // Slack usage warnings (v6.7)
   if (feasible) {
+    const slTU = Number(result['sl_total_under'] ?? 0)
+    const slTO = Number(result['sl_total_over'] ?? 0)
+    if (slTU > 1) warnings.push(
+      `Total de gramas: slack de ${Math.round(slTU)}g usado — ingredientes fornecem ${totalGrams.toFixed(1)}g de ${minTotal}g mínimos.`
+    )
+    if (slTO > 1) warnings.push(
+      `Total de gramas: slack de ${Math.round(slTO)}g usado para conter excesso — ingredientes fornecem ${totalGrams.toFixed(1)}g de ${maxTotal}g máximos.`
+    )
     const slKU = Number(result['sl_der_under'] ?? 0)
     const slKO = Number(result['sl_der_over'] ?? 0)
     if (slKU > 0.5) warnings.push(

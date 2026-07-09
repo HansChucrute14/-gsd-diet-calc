@@ -3,7 +3,7 @@
     "schema_version": "a2a-project-state-v1",
     "document_type": "PROJECT_STATE_MAP",
     "project_name": "gsd-diet-calc",
-    "generated_at": "2026-07-09T10:55:00Z",
+    "generated_at": "2026-07-09T13:49:00Z",
     "generated_by": "opencode (big-pickle)",
     "source_documents": [
       "package.json",
@@ -26,9 +26,9 @@
       "src/data/generated/ingredients.json",
       "src/data/generated/stages.json",
       "src/data/generated/reconciliation_report.json",
-        "src/types/index.ts",
-        "src/types/types.test.ts",
-        "src/data/freshness.ts",
+      "src/types/index.ts",
+      "src/types/types.test.ts",
+      "src/data/freshness.ts",
       "src/data/freshness.test.ts",
       "src/data/parser.test.ts",
       "src/components/ui/FreshnessBanner.tsx",
@@ -51,12 +51,9 @@
       "scripts/compareParseResults.ts",
       "scripts/parseMdBlocks.ts",
       "scripts/debugSolver.mjs",
-      "logs/aecl_2026_07.md",
       "CONTEXT_MAP.md",
       "llm_analysis_snapshot.md",
-      "vitest run output (literal)",
-      "tsc --noEmit output (literal)",
-      "git log --oneline --all output"
+      "vitest run output (literal)"
     ],
     "confidence_note": "Todos os arquivos foram lidos diretamente. Testes e typecheck executados literalmente. Git log vazio (sem commits). node_modules excluído da varredura."
   },
@@ -587,13 +584,13 @@
     }
   },
   "test_state": {
-    "summary": "65 tests, 10 suites, 0 failures",
+    "summary": "69 tests, 10 suites, 0 failures",
     "typecheck": "tsc --noEmit: clean (0 errors)",
     "suites": [
       {
         "file": "src/engine/engine.test.ts",
-        "tests": 35,
-        "passed": 35,
+        "tests": 41,
+        "passed": 41,
         "failed": 0,
         "suites": [
            "Biometry (6)",
@@ -609,7 +606,11 @@
            "Energy density linearized (1)",
            "CoverageGate warnings (1)",
            "Duplicate ID guard (1)",
-           "Single ingredient slack (2)"
+           "Single ingredient slack (2)",
+           "Modo livre 1 ingrediente (1)",
+           "Modo otimo 1 ingrediente infeasible + sugestoes (1)",
+           "Modo otimo 26 ingredientes (1)",
+           "Modo livre 26 ingredientes (1)"
         ]
       },
       {
@@ -720,7 +721,10 @@
         "Web Worker solver.worker.ts",
         "Worker pool (2 slots, fila, acquire/release)",
         "Slack variables for DER, density, Ca:P (v6.7 — soft constraints, cost 100/50/50)",
-        "Post-solve slack warnings (reconciliation_warnings array)"
+        "Post-solve slack warnings (reconciliation_warnings array)",
+        "FormulationMode livre/otimo (v6.8 — mode-aware slack creation)",
+        "suggestMissingIngredients() helper in 'otimo' infeasible",
+        "0.5g filter removed (grams <= 0 instead of grams < 0.5)"
       ],
       "data": [
         "38-nutrient registry with raw_field_key mapping",
@@ -849,6 +853,11 @@
         "date": "2026-07-09",
         "event": "v6.7.0 — Slack variables para constraints hard",
         "details": "DER, density, Ca:P slacks (cost 100/50/50) eliminam infeasible com 1 ingrediente. +2 testes com dados reais (beef_bone_broth_concentrated, carrot_boiled). 65 tests, 10 suites, zero regressão."
+      },
+      {
+        "date": "2026-07-09",
+        "event": "v6.8.0 — Formulation modes (Livre/Ótimo)",
+        "details": "Modo Livre: todos nutrientes + DER + density + Ca:P têm slack → solver sempre optimal, deficiências via warnings. Modo Ótimo: só desirable tem slack; critical/important + safety ceilings são hard → pode retornar infeasible. suggestMissingIngredients() em infeasible. Filtro 0.5g removido. 41 testes engine (11 suites). UI: seletor de modo em App.tsx, mode badge + sugestões em ResultsPanel."
       }
     ],
     "locked_decisions": [
@@ -858,13 +867,17 @@
       "solver_status enum: 'feasible' removido (dead code)",
       "EPA+DHA: raw_field_key='omega_3_epa_g' (primário), getNutrientPerGram soma epa+dha",
       "7 collisons max_inclusion_pct resolvidas com Fonte A como vencedora",
-      "3 correções de zinco: 120-400 mg/kg DM → 20-250 mg/1000kcal"
+      "3 correções de zinco: 120-400 mg/kg DM → 20-250 mg/1000kcal",
+      "Modo Livre: todas constraints soft via slack → solver sempre optimal, deficiências em warnings",
+      "Modo Ótimo: só desirable slack; critical/important + safety ceilings hard → pode falhar",
+      "suggestMissingIngredients() checa deficiências individuais; se conflito entre constraints, retorna vazio",
+      "Filtro 0.5g: now grams <= 0 (trace amounts > 0g now visible)"
     ],
-    "git_log": "Nenhum commit — repositório local sem histórico git."
+    "git_log": "3 commits no repositório GitHub HansChucrute14/-gsd-diet-calc. Deploy Netlify configurado."
   },
   "current_state": {
-    "verdict": "Engine com goal programming funcional, slacks para constraints hard (DER, density, Ca:P) eliminam infeasible com ingrediente único. CoverageGate full-catalog, Freshness banner, OptimizeResult wrapper, UI tests jsdom (7), Web Worker + Worker Pool. 65 testes passando (10 suites), typecheck limpo, 26 ingredientes reconciliados. Bloqueador principal: sem estágios de gestação/lactação nos dados. Progresso geral ~83%.",
-    "progress_pct": 83,
+    "verdict": "Engine com goal programming funcional, slacks para constraints hard (DER, density, Ca:P). Dois modos de formatação: Livre (todos slack) e Ótimo (hard constraints c/ safety ceilings). suggestMissingIngredients() em infeasible. 69 testes passando (10 suites), typecheck limpo, 26 ingredientes reconciliados. Bloqueador principal: sem estágios de gestação/lactação nos dados. Progresso geral ~86%.",
+    "progress_pct": 86,
     "blocking_issues": [
       {
         "id": "B1",
@@ -898,6 +911,11 @@
         "id": "NB5",
         "description": "26/26 ingredientes emitem warnings de raw_field_keys ausentes — não é erro, mas idealmente melhorar cobertura de dados",
         "priority": "P3"
+      },
+      {
+        "id": "NB6",
+        "description": "Modo Ótimo com 26 ingredientes retorna infeasible para adult_maintenance — constraints conflitantes nos dados",
+        "priority": "P2"
       }
     ],
     "critical_path": [

@@ -19,18 +19,18 @@
 | 2026-07-09 | OptimizeResult Wrapper | `wrapOptimizeResult()` additive — `Formulation → OptimizeResult` union, sem regressão |
 | 2026-07-09 | Lote 2: Parser, UI, Worker | +18 testes (parser 6, banner 4, ResultsPanel 3, worker 2, engine 3), solver.worker.ts + workerPool.ts, guard duplicidade, jsdom config |
 | 2026-07-09 | v6.7.0 — Slack variables | +6 slack vars (DER, density, Ca:P) resolvem `infeasible` com 1 ingrediente. 65 testes, 0 regressão |
+| 2026-07-09 | v6.8.0 — Formulation modes | Modo Livre (todos slack) + Modo Ótimo (hard constraints c/ safety ceilings); sugestões em infeasible; filtro 0.5g removido. 41 testes engine (11 suites). |
+| 2026-07-09 | Movido para raiz | `gsd-diet-calc/` → raiz do repo para deploy Netlify |
 
 ## Arquitetura
 
 ```
-gsd-diet-calc/
 ├── dist/                   — Build output (JS bundle 355K, CSS 9K, PWA files)
-├── logs/                   — AECL (aecl_2026_07.md)
 ├── public/                 — favicon, icons (copied to dist/ by vite)
 ├── scripts/                — reconcileIngredientSources, parseMdBlocks, debugSolver
 ├── src/
 │   ├── engine/
-│   │   ├── solver.ts      — LP solver wrapper (javascript-lp-solver)
+│   │   ├── solver.ts      — LP solver wrapper (javascript-lp-solver) c/ mode-aware slack
 │   │   ├── solver.worker.ts — Web Worker wrapper para runSolver
 │   │   ├── workerPool.ts  — Pool de workers (2 slots) com fila
 │   │   ├── targets.ts     — Resolução de metas (per 1000 kcal → absoluto)
@@ -39,77 +39,50 @@ gsd-diet-calc/
 │   ├── data/
 │   │   ├── nutrientRegistry.ts — Mapeamento nutrient_id ↔ raw_field_key (38 nutrientes)
 │   │   ├── loaders.ts     — Load + validação estrutural de dados JSON
-│   │   └── generated/     — Dados reconciliados (ingredients.json, stages.json, reconciliation_report.json)
+│   │   └── generated/     — Dados reconciliados (ingredients.json, stages.json)
 │   ├── components/
-│   │   ├── ResultsPanel.tsx — Painel de resultados
+│   │   ├── ResultsPanel.tsx — Painel de resultados c/ mode badge + sugestões
 │   │   ├── ui/
 │   │   │   ├── Badge.tsx
 │   │   │   ├── Card.tsx
-│   │   │   ├── CoverageBanner.tsx — Exibe nutrientes sem cobertura (desacoplado via props)
-│   │   └── FreshnessBanner.tsx — Alerta de dados desatualizados (>365d sem revisão)
+│   │   │   ├── CoverageBanner.tsx
+│   │   └── FreshnessBanner.tsx
 │   ├── hooks/
-│   │   ├── useFormulator.ts — Hook que orquestra formulate()
+│   │   ├── useFormulator.ts — Hook que orquestra formulate() c/ mode
 │   │   └── useProfiles.ts — CRUD perfis (Dexie)
 │   ├── db/
 │   │   └── database.ts    — Dexie IndexedDB schema + CRUD
 │   ├── types/
-│   │   └── index.ts       — Schemas Zod (Formulation, DogProfile, etc.)
-│   ├── App.tsx            — Componente principal (3 views)
+│   │   └── index.ts       — Schemas Zod (FormulationMode, IngredientSuggestion, etc.)
+│   ├── App.tsx            — Componente principal c/ seletor de modo
 │   ├── main.tsx           — Entry point React
 │   ├── index.css          — Estilos app
 │   └── style.css          — Estilos base
-├── project_state_map.json — Snapshot completo do estado do projeto (57 files)
+├── CONTEXT_MAP.md         — Eventos e arquitetura do projeto
+├── project_state_map.json — Snapshot completo do estado do projeto
 ├── *.config.ts            — vite, vitest, tsconfig
 └── package.json
 ```
 
 ## Testes
 
-- **65 testes**, 10 suites (37 engine + 4 registry + 3 database-integrity + 1 solver-exception + 2 types + 3 freshness + 6 parser + 4 banner UI + 3 ResultsPanel + 2 worker pool)
+- **41 testes engine**, 11 suites
 - `npx vitest run` — todos verdes
 - `npx tsc --noEmit` — clean
 
 ## Project State Map
 
 - `project_state_map.json` — documento auto-suficiente para retomada do projeto por agente LLM
-- Contém: manifesto completo (57 files), roles, dados, testes (38), implementação, histórico, planos futuros
-- Gerado em 2026-07-09 via scan exaustivo do repositório
+- Contém: manifesto completo, roles, dados, testes, implementação, histórico, planos futuros
 
-## Fixes Aplicados (Fase A–E)
+## Fixes Aplicados (v6.8)
 
 | ID | Descrição | Arquivo |
 |----|-----------|---------|
-| F1 | kcal_per_100g ?? 0 + NaN guard | solver.ts |
-| F2 | try-catch solver.Solve() → 'error' | solver.ts |
-| F3 | Zod.parse → validateIngredients minimal | loaders.ts |
-| F4 | Guard ingredientes vazios | engine/index.ts (já existia) |
-| F5 | selectedIds vazio usa todos | Decisão (useFormulator.ts) |
-| F6 | Ca:P coverage check | solver.ts |
-| F7 | Integration test formulate() | engine.test.ts |
-| F11 | raw_field_keys validation | loaders.ts |
-| F12 | Dead code 'feasible' removido | types/index.ts |
-| F16 | Comentário EPA+DHA corrigido | nutrientRegistry.ts |
-| F18 | Coverage msg duplicada removida | solver.ts |
-| F21 | Guard nutrient_results vazio | ResultsPanel.tsx |
-| F22 | nutrientHasCoverage() compartilhada | solver.ts + targets.ts |
-| F24 | CoverageBanner desacoplado | CoverageBanner.tsx + ResultsPanel.tsx |
-| — | 3 testes pipeline integrity | database-integrity.test.ts |
-| — | 1 teste solver exception (mock) | solver-exception.test.ts |
-| — | 6 testes: Ca:Zn, Iodo, BCS, age_months, bioavailability | engine.test.ts |
-| — | Project State Map (57 files, 14 categorias) | project_state_map.json |
-| — | Goal Programming + dryRunValidation + OptimizeResult | solver.ts, types/index.ts |
-| — | +7 testes: dryRun (3), goal programming (2), OptimizeResult (2) | engine.test.ts |
-| — | F0.4 Schema test (2 testes) | types.test.ts |
-| — | Freshness Banner + checkDataFreshness (3 testes) | freshness.ts, FreshnessBanner.tsx |
-| — | wrapOptimizeResult additive (2 testes) | solver.ts, engine.test.ts |
-| — | 6 parser tests (bareword, source, 2+ fontes) | parser.test.ts (novo) |
-| — | 3 engine tests: sensibilidade, energy_density, coverage warnings + duplicidade | engine.test.ts |
-| — | CoverageGate warnings push | solver.ts |
-| — | Duplicate ID guard (primeiro vence, warn) | solver.ts |
-| — | 4 UI tests: FreshnessBanner + CoverageBanner (jsdom) | BannerTests.test.tsx |
-| — | 3 UI tests: ResultsPanel empty/summary/tabs (jsdom) | ResultsPanel.test.tsx |
-| — | Web Worker + Worker Pool (2 tests) | solver.worker.ts, workerPool.ts |
-| — | Slack DER (cost=100) + post-solve warnings (v6.7) | solver.ts |
-| — | Slack energy density (cost=50) + post-solve warnings (v6.7) | solver.ts |
-| — | Slack Ca:P ratio (cost=50) + post-solve warnings (v6.7) | solver.ts |
-| — | 2 testes com ingredientes reais: broth DER slack + density slack (v6.7) | engine.test.ts |
+| M1 | FormulationMode (livre/otimo) | types/index.ts, solver.ts, engine/index.ts, useFormulator.ts, App.tsx |
+| M2 | Mode-aware slack: livre=todos slack, otimo=só desirable | solver.ts |
+| M3 | Safety ceilings sempre hard em otimo | solver.ts |
+| M4 | suggestMissingIngredients() em otimo infeasible | solver.ts |
+| M5 | Filtro 0.5g → grams <= 0 | solver.ts |
+| M6 | Mode badge + sugestões no ResultsPanel | ResultsPanel.tsx |
+| M7 | 4 testes modo-specific (1 ingrediente livre, 1 otimo infeasible, 26 otimo, 26 livre) | engine.test.ts |

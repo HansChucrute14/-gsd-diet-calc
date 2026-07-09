@@ -20,7 +20,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const ROOT = path.resolve(__dirname, '..')
-const SOURCES_DIR = path.resolve(ROOT, '..')  // hahhahaha folder (one level above gsd-diet-calc)
+const SOURCES_DIR = ROOT  // project root (markdown files live here)
 const OUT_DIR = path.resolve(ROOT, 'src/data/generated')
 
 const SOURCE_B_PATH = path.join(SOURCES_DIR, 'Banco_de_Dados_Beta v0.3 - Dados Completos.md')
