@@ -753,4 +753,42 @@ describe('Integration — formulate() pipeline', () => {
     const allZero = formulation.allocations.every(a => a.grams_per_day > 0)
     expect(allZero).toBe(true)
   })
+
+  describe('modo livre combinatório', () => {
+    const stage = STAGES.find(s => s.stage_id === 'adult_maintenance')!
+    const targets = resolveTargets(stage, 950)
+
+    it.each(INGREDIENTS)('single: $id', (ing) => {
+      const { formulation } = runSolver({
+        ingredients: [ing],
+        resolvedTargets: targets,
+        dogProfileId: 'comb-livre',
+        mode: 'livre',
+      })
+      expect(formulation.solver_status).toBe('optimal')
+    })
+  })
+
+  describe('modo livre — todas as combinações de pares', () => {
+    const stage = STAGES.find(s => s.stage_id === 'adult_maintenance')!
+    const targets = resolveTargets(stage, 950)
+    const pairs: Array<[string, string]> = []
+    for (let i = 0; i < INGREDIENTS.length; i++) {
+      for (let j = i + 1; j < INGREDIENTS.length; j++) {
+        pairs.push([INGREDIENTS[i].id, INGREDIENTS[j].id])
+      }
+    }
+
+    it.each(pairs)('%s + %s', (idA, idB) => {
+      const ingA = INGREDIENTS.find(i => i.id === idA)!
+      const ingB = INGREDIENTS.find(i => i.id === idB)!
+      const { formulation } = runSolver({
+        ingredients: [ingA, ingB],
+        resolvedTargets: targets,
+        dogProfileId: 'comb-pair',
+        mode: 'livre',
+      })
+      expect(formulation.solver_status).toBe('optimal')
+    })
+  })
 })
