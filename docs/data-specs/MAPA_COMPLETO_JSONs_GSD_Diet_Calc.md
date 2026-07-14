@@ -87,7 +87,7 @@ Cada ingrediente no array `ingredients` contém:
 ### 2.5 Relações com Outros JSONs
 
 - **Consumido por:** O build pipeline lê este arquivo, converte as_fed → energy_normalized (por 1000kcal) renomeando os 11 nutrientes com conversão de unidade e computando os 2 pares combinados de aminoácidos, e gera a matriz `a_ij` do solver. Este processo ainda não está implementado como código.
-- **Referencia `lp_parameters.schema.json`** no `_db_metadata.schema_ref`, mas na prática é validado por scripts Python separados (`validate_bovinos_deep.py`, `validate_master.py`).
+- **Referencia `lp_parameters.schema.json`** no `_db_metadata.schema_ref`, mas na prática é validado por scripts Python separados (`validate_bovinos_deep.py`, `validate_master.py` — ambos legados, removidos; substituídos por `validate_db_ingredientes.py`).
 - **As categorias (`category`) de cada ingrediente** alimentam o mapeamento em `formulation_rules._inclusion_semantics.category_to_ingredient_mapping`.
 - **Os `source_ref`** de cada nutriente (ex: `REF_USDA_FDC_170196`) seguem a convenção `^REF_[A-Z0-9_]+$` mas referenciam fontes externas (USDA FoodData Central) e não são resolvidos dentro dos JSONs do projeto — apenas os `REF_*` internos estão em `audit_provenance.json`.
 
@@ -472,7 +472,7 @@ As constraints em `constraints.json` seguem o padrão `CSTR_<TIPO>_<NUTRIENTE>_<
 
 | Grupo | Ingredientes | Status | Validado por |
 |-------|-------------|--------|--------------|
-| bovinos | 11 (beef_muscle_raw, beef_lung_raw, beef_foot_tendon_raw, beef_tail_raw, beef_tongue_raw, beef_blood_raw, beef_heart_raw, beef_green_tripe_raw, beef_liver_raw, beef_kidney_raw, beef_spleen_raw) | VALIDATED (0 errors, 11 warnings esperados) | validate_bovinos_deep.py |
+| bovinos | 11 (beef_muscle_raw, beef_lung_raw, beef_foot_tendon_raw, beef_tail_raw, beef_tongue_raw, beef_blood_raw, beef_heart_raw, beef_green_tripe_raw, beef_liver_raw, beef_kidney_raw, beef_spleen_raw) | VALIDATED (0 errors, 11 warnings esperados) | validate_bovinos_deep.py (legado, removido — substituído por validate_db_ingredientes.py) |
 | aves | 6 (chicken_muscle_raw, chicken_heart_raw, chicken_liver_raw, chicken_kidney_raw, chicken_foot_tendon_raw, chicken_blood_raw) | PARTIAL/PENDING (13+ issues conhecidos) | Pendente |
 | suínos | 2 (pork_muscle_raw, pork_liver_raw) | PARTIAL (ambos auditados) | Parcial |
 | peixes | 1 (salmon_atlantic_raw) | PARTIAL (salmon_atlantic auditado) | Parcial |
@@ -486,7 +486,7 @@ O `_db_metadata.validated_sources` lista apenas "bovinos". O `pending_sources` l
 1. **Build Pipeline** (crítico): Não existe código que conecte os JSONs ao solver. A conversão as_fed → energy_normalized, o rename de 11 nutrientes com conversão de unidade, a computação de 2 pares combinados de aminoácidos, a expansão de `_all_muscle_meat`, e o cálculo de DER a partir do Gompertz são todos processos documentados mas não implementados.
 2. **DB_ingredientes fora do schema**: Intencional, mas não há schema alternativo para validá-lo. A validação é feita por scripts Python ad-hoc.
 3. **Aves normalization**: 13+ issues pendentes nos 6 ingredientes de aves.
-4. **G8 false positive** em validate_master.py (P2).
+4. **G8 false positive** em validate_master.py (P2 — script legado, removido; substituído por validate_db_ingredientes.py).
 5. **Fase idosa/sênior não implementada**: Não há dados, constraints, ou cenários para cães idosos. O `k_multipliers.adult_working_active` (k=1.5) existe no `growth_energy_skeletal.json` com status=REFERENCE — pode ser usado para manutenção adulta, mas não há cenário adulto correspondente em `scenarios.json`. O sistema operacionaliza apenas crescimento (SCN_A/SCN_B). A extensão para manutenção adulta e idoso requer: (a) novos cenários com targets apropriados, (b) possível ajuste de SULs e constraints para faixas etárias avançadas, (c) k_multipliers para senior/sedentário.
 6. **3 suplementos planejados mas ausentes do DB**: `kelp_meal_dried`, `salt_nacl`, `copper_sulfate` estão mapeados em `formulation_rules._inclusion_semantics.category_to_ingredient_mapping` mas **não existem** como ingredientes no `DB_ingredientes.json`. Iodo permanece estruturalmente infactível até que kelp seja adicionado.
 7. **lp_parameters.schema.json é schema puro**: Não contém `solve_cascade` nem `NUTRIENT_REGISTRY`. Ambos são descritos na documentação como blocos de dados runtime (`lp_parameters_schema.json` na arquitetura V10.4), mas o arquivo real é exclusivamente um JSON Schema de validação. A localização definitiva destes blocos precisa ser decidida: criar um novo `lp_parameters_data.json` ou adicionar ao `constraints.json`.

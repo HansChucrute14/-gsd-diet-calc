@@ -2146,7 +2146,7 @@ Inalterado da V9:
 | 1 | Build Pipeline | Não existe código | Especificado na Seção 6 (aguardando implementação) | P0 |
 | 2 | DB_ingredientes fora do schema | Órfão por design | Órfão por design (validação por scripts) | P3 |
 | 3 | Aves normalization | 13+ issues | 13+ issues (sem mudança) | P1 |
-| 4 | G8 false positive em validate_master.py | P2 | P2 (sem mudança) | P2 |
+| 4 | G8 false positive em validate_master.py (legado, removido — substituído por validate_db_ingredientes.py) | P2 | P2 (sem mudança) | P2 |
 | 5 | Fase sênior/geriátrica | Zero dados | Zero dados | P3 |
 | 6 | Cenário adulto (SCN_C) | k=1.5 órfão | k=1.5 órfão, envelope dinâmico já suporta | P2 |
 | **7** | **Solver LP genérico que lê solve_cascade** | **Não existe** | **Especificado na Seção 8 (aguardando implementação)** | **P0** |

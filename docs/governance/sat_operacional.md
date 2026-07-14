@@ -90,7 +90,7 @@
 |1|Build Pipeline|No code exists|Specified in §6 (awaiting implementation)|P0|
 |2|DB_ingredientes outside schema|Orphan by design|Orphan by design (script validation)|P3|
 |3|Poultry normalization|13+ issues|13+ issues (unchanged)|P1|
-|4|G8 false positive in validate_master.py|P2|P2 (unchanged)|P2|
+|4|G8 false positive in validate_master.py (legacy, removed — superseded by validate_db_ingredientes.py)|P2|P2 (unchanged)|P2|
 |5|Senior/geriatric phase|Zero data|Zero data|P3|
 |6|Adult scenario (SCN_C)|k=1.5 orphan|k=1.5 orphan, dynamic envelope already supports|P2|
 |**7**|**Generic LP solver reading solve_cascade**|**Does not exist**|**Specified in §8 (awaiting implementation)**|**P0**|
