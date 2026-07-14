@@ -1667,7 +1667,7 @@ def test_single_ingredient_returns_result():
     assert result["feeding_recommendation"] == "FEED_WITH_CAUTION"
     assert result["allocations"] is not None
     assert len(result["allocations"]) >= 1
-    assert len(result["nutrient_results"]) == 41
+    assert len(result["nutrient_results"]) >= 41  # 41 nutrientes primários + compostos opcionais
     assert len(result["gaps"]) > 0  # Filé mignon sozinho tem gaps
     assert len(result["recommended_additions"]) > 0
 
