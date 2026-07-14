@@ -241,6 +241,7 @@
     "priority_tier": 4,
     "description": "Penalizacao para deficiencia de manganes — cofator da Mn-SOD (superóxido dismutase mitocondrial), essencial para protecao antioxidante e ossificacao condral em filhotes de racas grandes.",
     "source_ref": "REF_ALGO_GOAL_PROG",
+    "solver_penalty_multiplier": null,
     "variable_note": "Target implicito = hard min (CSTR_NB_MANGANESE_MG_MIN: >= 1.8 mg/1000kcal, AAFCO large breed growth). Margem ate SUL (15mg) e de 8.3x. Peso baixo (400) porque o hard constraint ja garante o floor; este penalty incentiva otimizacao acima do minimo."
   },
   {

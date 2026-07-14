@@ -181,11 +181,11 @@
 |**72**|**§4.1 table: "17 orphan refs resolved" → "17 orphan refs still pending" (confirmed against real file)**|**4.1**|**V10.4 fix**|
 |**73**|**§4.1 table: `formulation_rules` — "3 new IDs" marked as planned, not applied**|**4.1**|**V10.4 fix**|
 |**74**|**§4.1 table: `toxicological_limits` — documented as list at top with nested sul.value (not dict with safe_upper_limits)**|**4.1**|**V10.4 fix**|
-|**75**|**§4.1 table: `objective_weights` — `PEN_MANGANESE_NEG` documented as only weight without solver_penalty_multiplier**|**4.1**|**V10.4 fix**|
+|**75**|**§4.1 table: `objective_weights` — `PEN_MANGANESE_NEG` documented as only weight without solver_penalty_multiplier**|**4.1**|**V10.4 fix** → V10.4 cleanup: null added, exception closed|
 |**76**|**Code: `validate_output()` — `len(nutrient_results) == 41` → `>= 41` (composites may be additional)**|**6.4**|**V10.4 fix**|
 |**77**|**Contract guarantees (7): "exactly 41 entries" → "at least 41 entries" + note about composite variables**|**7**|**V10.4 fix**|
 |**78**|**Test: `test_tox_limits_structure_matches_actual_file()` — validates toxicological_limits.json shape**|**11.3**|**V10.4 fix**|
-|**79**|**Test: `test_objective_weights_all_have_penalty_multiplier_or_null()` — documents PEN_MANGANESE_NEG exception**|**11.3**|**V10.4 fix**|
+|**79**|**Test: `test_objective_weights_all_have_penalty_multiplier_or_null()` — documents PEN_MANGANESE_NEG exception (resolved in cleanup: null added)**|**11.3**|**V10.4 fix**|
 |**80**|**§9.2: `test_all_non_usda_source_refs_resolve` description updated with real flags**|**11.3**|**V10.4 fix**|
 |**81**|**Priority P0 #1: "resolved in V10" → "PLANNED, NOT applied"**|**13**|**V10.4 fix**|
 |**82**|**Priority P1 #6: "Resolve 17 refs" → marked as PLANNED, NOT applied**|**13**|**V10.4 fix**|

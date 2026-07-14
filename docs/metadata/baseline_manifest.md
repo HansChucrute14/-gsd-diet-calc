@@ -141,7 +141,7 @@
 | `PEN_COPPER_NEG` | None | 3 |
 | `PEN_SELENIUM_NEG` | None | 3 |
 | `PEN_VITAMIN_E_NEG` | None | 3 |
-| `PEN_MANGANESE_NEG` | MISSING | 4 |
+| `PEN_MANGANESE_NEG` | None | 4 |
 | `PEN_POTASSIUM_NEG` | None | 4 |
 | `PEN_CHOLINE_NEG` | None | 4 |
 | `PEN_ALA_NEG` | None | 4 |
@@ -150,7 +150,7 @@
 | `PEN_IODINE_NEG` | None | 4 |
 | `PEN_COST_POS` | None | 5 |
 
-**Without penalty_multiplier:** PEN_MANGANESE_NEG
+**Note:** PEN_MANGANESE_NEG formerly lacked `solver_penalty_multiplier`; explicitly set to `null` in V10.4 cleanup.
 
 ## 7. audit_provenance.json
 

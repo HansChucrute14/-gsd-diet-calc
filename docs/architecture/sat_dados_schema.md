@@ -343,14 +343,14 @@ def test_tox_limits_structure_matches_actual_file():
         assert not isinstance(tox, dict), "Code must not treat tox as dict"
 
 def test_objective_weights_all_have_penalty_multiplier_or_null():
-    """[V10.4] All 29 weights in objective_weights.json must have solver_penalty_multiplier (can be null) — except PEN_MANGANESE_NEG which is the only one without the field. Code MUST use .get() to access. ANTI-GAMIFICATION: json.load() real file, check field presence."""
+    """[V10.4] All 29 weights in objective_weights.json must have solver_penalty_multiplier (can be null). Code MUST use .get() to access. ANTI-GAMIFICATION: json.load() real file, check field presence."""
     import json
     ow = json.load(open("objective_weights.json"))
     missing = [w["weight_id"] for w in ow if "solver_penalty_multiplier" not in w]
-    # PEN_MANGANESE_NEG is the only legitimately missing the field
-    assert missing == ["PEN_MANGANESE_NEG"], (
+    # All 29 weights now have solver_penalty_multiplier (PEN_MANGANESE_NEG was explicitly null-added in V10.4 cleanup)
+    assert missing == [], (
         f"Weights without solver_penalty_multiplier: {missing} — "
-        f"if different from ['PEN_MANGANESE_NEG'], file was changed without updating this test"
+        f"PEN_MANGANESE_NEG exception was resolved in V10.4 cleanup by adding explicit null"
     )
 ```
 
@@ -367,7 +367,7 @@ Curation/validation of data is complete when ALL items below are true:
 - [ ] `lp_parameters_schema.json` contains `NUTRIENT_REGISTRY` with `constraint_tier` (3 values: `safety_hard`, `adequacy_soft`, `envelope_soft`) and `clinical_criticality` (4 values: `critical`, `high`, `moderate`, `low`) for each of the 41 nutrients.
 - [ ] `lp_parameters_schema.json` contains `solve_cascade[]` (3 levels, declarative).
 - [ ] `toxicological_limits.json` is `list` at top (not `dict`), 8 entries, each with nested `sul.value` (not flat `sul_value`).
-- [ ] `objective_weights.json` has 29 weights, all with `solver_penalty_multiplier` except `PEN_MANGANESE_NEG` (legitimate exception).
+- [ ] `objective_weights.json` has 29 weights, all with `solver_penalty_multiplier` (PEN_MANGANESE_NEG formerly had none — resolved in V10.4 cleanup by adding explicit null).
 - [ ] `category_to_ingredient_mapping` in `formulation_rules.json` references only `ingredient_id`s that exist in DB.
 - [ ] Tests in §A pass against real files (no fixtures).
 

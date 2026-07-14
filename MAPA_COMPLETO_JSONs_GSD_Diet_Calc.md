@@ -567,7 +567,7 @@ Recommended sequence for agentic AI to build system from scratch. Each phase has
 | `PEN_COPPER_NEG` | copper_mg | 800 | 3 | None |
 | `PEN_SELENIUM_NEG` | selenium_mg | 800 | 3 | None |
 | `PEN_VITAMIN_E_NEG` | vitamin_e_iu | 800 | 3 | None |
-| `PEN_MANGANESE_NEG` | manganese_mg | 400 | 4 | MISSING |
+| `PEN_MANGANESE_NEG` | manganese_mg | 400 | 4 | None |
 | `PEN_POTASSIUM_NEG` | potassium_g | 600 | 4 | None |
 | `PEN_CHOLINE_NEG` | choline_g | 600 | 4 | None |
 | `PEN_ALA_NEG` | ala_alpha_linolenic_acid_g | 500 | 4 | None |
@@ -576,7 +576,7 @@ Recommended sequence for agentic AI to build system from scratch. Each phase has
 | `PEN_IODINE_NEG` | iodine_mg | 400 | 4 | None |
 | `PEN_COST_POS` | cost_per_kg | 10 | 5 | None |
 
-**Without `solver_penalty_multiplier`:** PEN_MANGANESE_NEG
+**Note:** PEN_MANGANESE_NEG formerly lacked `solver_penalty_multiplier`; explicitly set to `null` in V10.4 cleanup.
 
 ## scenarios.json — Scenarios
 
