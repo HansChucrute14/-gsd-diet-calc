@@ -234,3 +234,5 @@
 | Adult k_multiplier | does not exist (per docs) | exists: adult_working_active (k=1.5) | [!]
 | Missing supplements in DB | 0 (per claimed) | 3 (kelp, salt, CuSO4 mapped but absent) | [!]
 | nutrient_matrix structure | dict with min_value/max_value | list with nested `values` dict | [!]
+
+> **Note:** udit/ artifacts (aseline_manifest.json, cross_ref_index.json, cross_refs_drift.json) are generated on demand via python build_pipeline.py --audit-mapa and are not version-controlled.
