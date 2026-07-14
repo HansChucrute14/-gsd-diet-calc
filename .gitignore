@@ -1,0 +1,4 @@
+﻿# Ephemeral audit artifacts — regenerated via python build_pipeline.py --audit-mapa
+audit/baseline_manifest.json
+audit/cross_ref_index.json
+audit/cross_refs_drift.json
